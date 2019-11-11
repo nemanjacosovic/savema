@@ -10,62 +10,117 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <meta name="theme-color" content="#fafafa">
+    <!-- Google Fonts 'Open Sans' -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <div>
+    <div class="savema">
       <!-- Header -->
-      <header>
-        <!-- Logo -->
-        <div></div>
-        <!-- Menu -->
-        <div>
-          <!-- Open/Close -->
-          <div>
-            <a href="#" title="#">Menu</a>
+      <header class="savema-header">
+        <!-- Mobile Info -->
+        <div class="uk-grid uk-grid-collapse uk-padding-small savema-header-mobile-info">
+          <div class="uk-width-1-2">
+            <div class="uk-grid uk-grid-small">
+              <div class="uk-width-auto">
+                <a href="mailto:savemainovacije@gmail.com" title="Kontakt email"><span class="uk-inline" uk-icon="icon: mail; ratio: 1"></span></a>
+              </div>
+              <div class="uk-width-auto">
+                <a href="https://goo.gl/maps/b8ge8DC7zawxwR72A" title="Kontakt adresa"><span class="uk-inline" uk-icon="icon: location; ratio: 1"></span></a>
+              </div>
+              <div class="uk-width-auto">
+                <a href="tel:+38163683793" title="Kontakt telefon"><span class="uk-inline uk-margin-right showtime" uk-icon="icon: receiver; ratio: 1" ></span></a>
+              </div>
+            </div>
           </div>
-          <!-- Main menu -->
-          <nav>
-            <ul>
-              <li>
-                <a href="#" title="#">Naslovna</a>
+          <div class="uk-width-1-2 uk-margin-auto-vertical">
+            <a href="tel:+38163683793" title="Kontakt telefon">(+381) 063 683 793</a>
+<!--            <a href="https://goo.gl/maps/b8ge8DC7zawxwR72A" title="Kontakt adresa">Koče Anđelkovića 18<br/>32000 Čačak, Srbija</a>-->
+<!--            <a href="mailto:savemainovacije@gmail.com" title="Kontakt email">office@savema.rs</a>-->
+          </div>
+          <p class="savema-header-mobile-info-title">kontakt <span id="kontakt-label">telefon</span></p>
+        </div>
+        <!-- Mobile Header -->
+        <div class="uk-grid uk-padding-small savema-header-mobile">
+          <!-- Logo -->
+          <div class="uk-width-3-5">
+            <img data-src="img/savema-cacak-logo.png" width="100%" height="" alt="Savema logo" uk-img>
+<!--            <p>YOUR CHEMICAL AND TECHNOLOGY EXPERTS</p>-->
+          </div>
+          <!-- Menu Open/Close -->
+          <div class="uk-width-2-5 uk-text-right uk-margin-auto-vertical savema-header-mobile-openclose">
+            <button class="uk-button uk-button-default savema-header-mobile-menu-button" type="button" href="#mm-mobile" title="Meni navigacija" uk-toggle="target: #mm-mobile">Meni <span class="uk-inline" uk-icon="icon: menu; ratio: 1.39"></span></button>
+          </div>
+        </div>
+        <!-- Main menu | Mobile -->
+        <nav id="mm-mobile" uk-offcanvas>
+          <div class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+              <li class="uk-active">
+                <a href="/" title="Savema homepage">Naslovna</a>
               </li>
               <li>
-                <a href="#" title="#">Savetnik za hemikalije</a>
+                <a href="#kred" title="Savema kredencijali">Kredencijali</a>
               </li>
               <li>
-                <a href="#" title="#">Savetnik za bezbednost u transportu opasne robe</a>
+                <a href="#savzahem" title="Savema savetnik za hemikalije">Savetnik za hemikalije</a>
               </li>
               <li>
-                <a href="#" title="#">Konsultant za MMMMMMMMM</a>
+                <a href="#savzabez" title="Savema savetnik za bezbednost">Savetnik za bezbednost</a>
               </li>
               <li>
-                <a href="#" title="#">Inovaciona strategija</a>
+                <a href="#traoparob" title="Savema transport opasne robe">Transport opasne robe</a>
               </li>
               <li>
-                <a href="#" title="#">Kontakt</a>
+                <a href="#izdser" title="Savema izdavanje sertifikata">Izdavanje sertifikata</a>
+              </li>
+              <li>
+                <a href="#anaipro" title="Savema analiza i procena">Analiza i procena</a>
+              </li>
+              <li>
+                <a href="#konusl" title="Savema konsultantske usluge">Konsultantske usluge</a>
+              </li>
+              <li>
+                <a href="#strrazino" title="Savema strategija razvoja inovacija">Strategija razvoja inovacija</a>
+              </li>
+              <li>
+                <a href="#footer" title="Savema Kontakt">Kontakt</a>
               </li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
+        <!-- Main menu | Desktop -->
       </header>
       <!-- Content -->
-      <main>
+      <main class="savema-content">
         <!-- Masthead -->
-        <div>
-          <p>Mi smo nezavisna konsultantska agencija koja se bavi pružanjem usluga Savetnika za hemikalije, Savetnika za bezbednost u transportu opasne robe u drumskom i železničkom saobraćaju, predlaganjem rešenja za dodatnu vrednost u poslovanju, strateškom analizom tehnologije, savetovanjem u razvoju inovativnih proizvoda i usluga.</p>
+        <div class="savema-content-masthead">
+          <h1 class="savema-content-masthead-title">Savetnik za <span class="savema-content-masthead-title-alt">Hemikalije,</span> Transport opasne robe i <span class="savema-content-masthead-title-alt">Bezbednost</span></h1>
+          <h3 class="savema-content-masthead-subtitle">Savema licencirani Savetnik za hemikalije u oblasti pravilne primene Zakona o hemikalijama i Zakona o biocidima.</h3>
+          <a class="uk-button uk-button-secondary savema-content-masthead-cta">Sertifikacija i procena <span class="uk-inline" uk-icon="icon: arrow-right; ratio: 1"></span></a>
+          <p><strong>Savema</strong> je nezavisna konsultantska agencija koja se bavi pružanjem usluga Savetnika za <strong>hemikalije</strong>, Savetnika za bezbednost u transportu <strong>opasne robe</strong> u drumskom i železničkom saobraćaju, <strong>predlaganjem rešenja</strong> za dodatnu vrednost u poslovanju, strateškom <strong>analizom tehnologije</strong>, savetovanjem u razvoju inovativnih proizvoda i usluga.</p>
         </div>
         <!-- Block A -->
-        <div>
+        <div class="savema-content-block" id="kred">
+          <img class="uk-align-center savema-content-block-image" data-src="img/savema-block-a.png" width="50%" height="" alt="Savema" uk-img>
+          <h2>Kredencijali</h2>
           <p>Dobrodošli u SAVEMA INOVACIJE Čačak konsultantsku kuću koja se bavi pružanjem usluga Savetnika za hemikalije, Savetnika za bezbednost u transportu opasne robe u drumskom i železničkom saobraćaju ADR/RID, predlaganjem rešenja za dodatnu vrednost u poslovanju, strateškom analizom tehnologije, savetovanjem u razvoju inovativnih proizvoda i usluga.</p>
           <p>Na osnovu velikog iskustva u istraživanju i razvoju novih proizvoda i inovacija sarađujemo sa Vama u pronalasku inovativnih rešenja u različitim oblastima hemijske, farmaceutske i prehrambene industrije.</p>
           <p>Pomažemo klijentima u različitim aspektima istraživanja i razvoja, od razvoja koncepta i analize mogućnosti do dizajna proizvoda, zaštite intelektualne svojine i komercijalizacije.</p>
+          <a class="uk-button uk-button-secondary savema-content-block-cta">Zakazivanje termina <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block B -->
-        <div>
+        <div class="savema-content-block" id="savzahem">
+          <img class="uk-align-center savema-content-block-image" data-src="img/savema-block-b.jpeg" width="50%" height="" alt="Savema" uk-img>
           <h2>Savetnik za hemikalije</h2>
           <p>Pružamo usluge licenciranog Savetnika za hemikalije u oblasti pravilne primene Zakona o hemikalijama i Zakona o biocidima i propisa donetih na osnovu njih.</p>
           <p>Za Vas u okviru usluga Savetnika za hemikalije vršimo sve aktivnosti koje su potrebne za održavanje zakonskih uslova u poslovanju, nesmetan rad i uspešno poslovanje:</p>
@@ -84,28 +139,33 @@
             <li>Sprovođenje odredbi Zakona o biocidnim proizvodima;</li>
             <li>Saradnja sa nadležnim inspekcijskim organima;</li>
           </ul>
+          <a class="uk-button uk-button-secondary savema-content-block-cta">Zakazivanje termina <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block C -->
-        <div>
-          <h2>SAVETNIK ZA BEZBEDNOST U TRANSPORTU OPASNE ROBE ADR/RID</h2>
+        <div class="savema-content-block">
+          <img class="uk-align-center savema-content-block-image" data-src="img/savema-block-c.jpeg" width="50%" height="" alt="Savema" uk-img>
+          <h2>Savetnik za bezbednost u transportu opasne robe ADR/RID</h2>
           <p>Pružamo uslugu eksternog licenciranog Savetnika za bezbednost u transportu opasne robe javnim preduzećima, privrednim društvima, preduzetnicima i drugim pravnim licima koji obavljaju poslove kojima je obavezna primena propisa u transportu opasne robe.</p>
           <p>Svako privredno društvo čija delatnost obuhvata transport opasne robe povezano sa pakovanjem, utovarom, punjenjem ili istovarom opasne robe, korisnici kontejner cisterni ili prenosivih cisterni, kao i organizator transporta i pružalac usluge pretovara pri promeni vida saobraćaja u transportu opasne robe, mora imati angažovanog najmanje jednog Savetnika za bezbednost u transportu opasne robe.</p>
           <p>Neki od zadataka Savetnika za bezbednost u transportru opasne robe ADR/RID su:</p>
-          <ul></ul>
-          <li>Savetovanje u aktivnostima privrednog društva vezanim sa transport opasnе robe;</li>
-          <li>Praćenje primene propisa koji se odnose na transport opasne robe;</li>
-          <li>Primena zahteva za identifikaciju opasne robe koja se transportuje;</li>
-          <li>Provera opreme koja je u vezi sa transportom, pakovanjem, punjenjem, utovarom ili istovarom opasne robe;</li>
-          <li>Obuka zaposlenih koji rukuju opasnom robom, uključujući izmene propisa i vođenje evidencije o izvršenim obukama;</li>
-          <li>Sprovođenje odgovarajućih hitnih mera pri eventualnim nezgodama ili vanrednim događajima, koje mogu da ugroze bezbednost u toku transporta opasne robe, pakovanja, punjenja, utovara ili istovara;</li>
-          <li>Postupci na utvrđivanju uzroka i ispostavljanje izveštaja o nesrećama, nezgodama, ili teškim prestupima, koji su utvrđeni u toku transporta opasne robe, pakovanja, punjenja, utovara ili istovara;</li>
-          <li>Kontrola da li lica uključena u transport opasne robe, pakovanje, punjenje, utovar ili istovar opasne robe, raspolažu detaljnim objašnjenjima i uputstvima za rad;</li>
-          <li>Izrada Godišnjeg izveštaja za rukovodstvo privrednog društva ili eventualno za lokalne organe vlasti o aktivnostima u vezi sa transportom opasnе robe;</li>
-          <li>Saradnja sa nadležnim inspekcijskim organima;</li>
+          <ul>
+            <li>Savetovanje u aktivnostima privrednog društva vezanim sa transport opasnе robe;</li>
+            <li>Praćenje primene propisa koji se odnose na transport opasne robe;</li>
+            <li>Primena zahteva za identifikaciju opasne robe koja se transportuje;</li>
+            <li>Provera opreme koja je u vezi sa transportom, pakovanjem, punjenjem, utovarom ili istovarom opasne robe;</li>
+            <li>Obuka zaposlenih koji rukuju opasnom robom, uključujući izmene propisa i vođenje evidencije o izvršenim obukama;</li>
+            <li>Sprovođenje odgovarajućih hitnih mera pri eventualnim nezgodama ili vanrednim događajima, koje mogu da ugroze bezbednost u toku transporta opasne robe, pakovanja, punjenja, utovara ili istovara;</li>
+            <li>Postupci na utvrđivanju uzroka i ispostavljanje izveštaja o nesrećama, nezgodama, ili teškim prestupima, koji su utvrđeni u toku transporta opasne robe, pakovanja, punjenja, utovara ili istovara;</li>
+            <li>Kontrola da li lica uključena u transport opasne robe, pakovanje, punjenje, utovar ili istovar opasne robe, raspolažu detaljnim objašnjenjima i uputstvima za rad;</li>
+            <li>Izrada Godišnjeg izveštaja za rukovodstvo privrednog društva ili eventualno za lokalne organe vlasti o aktivnostima u vezi sa transportom opasnе robe;</li>
+            <li>Saradnja sa nadležnim inspekcijskim organima;</li>
+          </ul>
+          <a class="uk-button uk-button-secondary savema-content-block-cta">Zakazivanje termina <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block D -->
-        <div>
-          <h2>KONSULTANTSKE USLUGE</h2>
+        <div class="savema-content-block">
+          <img class="uk-align-center savema-content-block-image" data-src="img/savema-block-d.png" width="50%" height="" alt="Savema" uk-img>
+          <h2>Konsultantske usluge</h2>
           <p>SAVEMA INOVACIJE ČAČAK nudi besplatne inicijalne konsultacije sa dodatnim konsultantskim uslugama na licu mesta, telefonom i e-poštom.</p>
           <p>Konsultacije mogu da uključuju, ali nisu ograničene na:</p>
           <ul>
@@ -119,11 +179,29 @@
             <li>Savetovanje u vezi zaštite intelektualne svojine;</li>
           </ul>
           <p>Sporazum o neotkrivanju podataka (NDA) dostupan je na zahtev.</p>
+          <a class="uk-button uk-button-secondary savema-content-block-cta">Zakazivanje termina <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block E -->
-        <div>
-          <h2>KONSALTING IZ OBLASTI INOVACIJA</h2>
-
+        <div class="savema-content-block" id="strrazino">
+          <img class="uk-align-center savema-content-block-image" data-src="img/savema-block-e.jpg" width="50%" height="" alt="Savema" uk-img>
+          <h2>Strategija razvoja inovacija</h2>
+          <p>Sa dugogodišnjim iskustvom u razvoju i komercijalizaciji inovacija, možemo Vam pomoći da primenite neke od najboljih praksi za razvoj inovacija, kako bi inovaciju uspešno realizovali u skladu sa strategijom rasta vaše kompanije.</p>
+          <p>Naše usluge uključuju:</p>
+          <ul>
+            <li>Upravljanje procesom generisanja ideja;</li>
+            <li>Procena tehnološke i komercijalne spremnosti inovacije;</li>
+            <li>Definisanje strategije razvoja inovacija, potencijalnih proizvoda ili usluga;</li>
+            <li>Identifikacija trenutnih tehnoloških trendova u polju interesovanja klijenta;</li>
+            <li>Definisanje strategije za dalјi razvoj inovativnih proizvoda ili usluga;</li>
+            <li>Implementacija strategije i komercijalne taktike kako bi se pronašli poslovni partneri;</li>
+            <li>Povezivanje novih tehnologija i izuma sa specifičnim tržištima;</li>
+            <li>Konsultantske usluge vezane za transfer tehnologije;</li>
+            <li>Kontrola i praćenje razvoja preduzeća;</li>
+            <li>Angažovanje spolјnih stručnjaka specijalizovanih za tehničku oblast;</li>
+            <li>Usluge u oblasti zaštite intelektualne svojine, pre svega za pripremu prijave patenata i registraciju autorskih prava na nacionalnom i međunarodnom nivou;</li>
+            <li>Angažovanje stručnjaka Konsultanta koji će pružiti stručnu pomoć - ekspertizu u različitim fazama ispitivanja i komercijalizacije;</li>
+          </ul>
+          <a class="uk-button uk-button-secondary savema-content-block-cta">Zakazivanje termina <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block F -->
         <div></div>
@@ -133,19 +211,20 @@
         <div></div>
       </main>
       <!-- Footer -->
-      <footer></footer>
-      <!-- Call Us shortcut -->
-      <div>
-        <!-- Call -->
-        <div>ICON_CALL</div>
-        <!-- E-mail -->
-        <div>ICON_EMAIL</div>
-        <!-- Address -->
-        <div>ICON_GPS</div>
-      </div>
+      <footer class="savema-footer" id="footer">
+        <!-- Call Us shortcut -->
+        <div>
+          <!-- Call -->
+          <div>ICON_CALL</div>
+          <!-- E-mail -->
+          <div>ICON_EMAIL</div>
+          <!-- Address -->
+          <div>ICON_GPS</div>
+        </div>
+      </footer>
     </div>
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
@@ -155,6 +234,6 @@
       window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
       ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+<!--    <script src="https://www.google-analytics.com/analytics.js" async></script>-->
   </body>
 </html>

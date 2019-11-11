@@ -1,13 +1,16 @@
 /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html {
   color: #222;
   font-size: 1em;
@@ -23,6 +26,7 @@ html {
  *
  * Customize the background color to match your design.
  */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -36,6 +40,7 @@ html {
 /*
  * A better looking default horizontal rule
  */
+
 hr {
   display: block;
   height: 1px;
@@ -50,6 +55,7 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
+
 audio,
 canvas,
 iframe,
@@ -62,6 +68,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
   border: 0;
   margin: 0;
@@ -71,6 +78,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
+
 textarea {
   resize: vertical;
 }
@@ -78,6 +86,7 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -88,114 +97,147 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+$main-red: rgba(232, 35, 42, 1);
+$color-gunmetal: #2B2D42;
+$color-grayblue: #8D99AE;
+$color-antiflashwhite: #EDF2F4;
+$color-pumpkin: #FF7F11;
+
 html, body {
-  color: #2B2D42;
-  font-family: "Open Sans", sans-serif;
+  color: $color-gunmetal;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.savema-header-mobile.uk-grid {
-  margin-top: 10px;
-}
-.savema-header-mobile-openclose button {
-  width: 100%;
-  border: none;
-  padding: 5px 0;
-  font-weight: 300;
-  font-size: 1.37em;
-  border-radius: 34px;
-}
-.savema-header-mobile-openclose button span {
-  vertical-align: 1px;
-}
-.savema-header-mobile-info {
-  position: relative;
-  background: #EDF2F4;
-  border-bottom: 1px solid #ebebcb;
-}
-.savema-header-mobile-info a {
-  color: #e8232a;
-  line-height: 1em;
-  vertical-align: middle;
-}
-.savema-header-mobile-info a span {
-  padding: 8px;
-  border-radius: 50%;
-  background: white;
-  color: #e8232a;
-  border: 1px solid #e8232a;
-}
-.savema-header-mobile-info a span.showtime {
-  color: #ffffff;
-  background: #e8232a;
-}
-.savema-header-mobile-info-title {
-  right: 25%;
-  bottom: 0;
-  margin: 0;
-  color: #8D99AE;
-  font-size: 11px;
-  position: absolute;
-  text-align: center;
-  letter-spacing: 0.1em;
-  padding: 0 15px 2px 15px;
-  border-radius: 1px 1px 10px 10px;
-  background: #EDF2F4;
-  transform: translateX(calc(25% + 15px)) translateY(50%);
-  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid #dbdbbb;
-  border-left: none;
-}
-.savema-content-masthead {
-  padding: 0 30px;
-  background: url("../img/savema-header-bg-3.png") center center no-repeat;
-  background-size: auto 100%;
-}
-.savema-content-masthead-title {
-  font-size: 2.4em;
-  font-weight: 800;
-}
-.savema-content-masthead-title-alt {
-  color: #e8232a;
-}
-.savema-content-masthead .savema-content-masthead-subtitle {
-  margin-top: 10px;
-  font-size: 0.84em;
-}
-.savema-content-masthead-cta {
-  padding: 0 15px 0 30px;
-  letter-spacing: 0.05em;
-}
-.savema-content-masthead p {
-  padding: 30px 0 0 0;
-}
-.savema-content-block {
-  padding: 50px 30px 0 30px;
-}
-.savema-content-block h2 {
-  font-weight: 700;
-}
-.savema-content-block-image {
-  margin-bottom: 0;
-}
-.savema-content-block-cta {
-  padding: 0 25px 0 30px;
-  letter-spacing: 0.05em;
-}
-.savema-content-block-cta span.btnlnk-icon {
-  margin-left: 10px;
-}
-.savema-footer {
-  background: #2B2D42;
+.savema {
+  &-header {
+    &-mobile {
+      &.uk-grid {
+        margin-top: 10px;
+      }
+
+      &-openclose {
+        & button {
+          width: 100%;
+          border: none;
+          padding: 5px 0;
+          font-weight: 300;
+          font-size: 1.37em;
+          border-radius: 34px;
+
+          & span {
+            vertical-align: 1px;
+          }
+        }
+      }
+    }
+    &-mobile-info {
+      position: relative;
+      background: $color-antiflashwhite;
+      border-bottom: 1px solid rgb(235, 235, 203);
+
+      & a {
+        color: $main-red;
+        line-height: 1em;
+        vertical-align: middle;
+
+        & span {
+          padding: 8px;
+          border-radius: 50%;
+          background: white;
+          color: $main-red;
+          border: 1px solid $main-red;
+
+          &.showtime {
+            color: #ffffff;
+            background: $main-red;
+          }
+        }
+      }
+
+      &-title {
+        right: 25%;
+        bottom: 0;
+        margin: 0;
+        color: $color-grayblue;
+        font-size: 11px;
+        position: absolute;
+        text-align: center;
+        letter-spacing: 0.1em;
+        padding: 0 15px 2px 15px;
+        border-radius: 1px 1px 10px 10px;
+        background: $color-antiflashwhite;
+        transform: translateX(calc(25% + 15px)) translateY(50%);
+        box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid rgb(219, 219, 187);
+        border-left: none;
+      }
+    }
+    &-mobile-menu {}
+
+    &-desktop {}
+  }
+  &-content {
+    &-masthead {
+      padding: 0 30px;
+      background: url("../img/savema-header-bg-3.png") center center no-repeat;
+      background-size: auto 100%;
+
+      &-title {
+        font-size: 2.4em;
+        font-weight: 800;
+          &-alt {
+            color: $main-red;
+          }
+      }
+      & &-subtitle {
+        margin-top: 10px;
+        font-size: 0.84em;
+      }
+      &-cta {
+        padding: 0 15px 0 30px;
+        letter-spacing: 0.05em;
+      }
+      & p {
+        padding: 30px 0 0 0;
+      }
+    }
+
+    &-block {
+      padding: 50px 30px 0 30px;
+
+      & h2 {
+        font-weight: 700;
+      }
+
+      &-image {
+        margin-bottom: 0;
+      }
+
+      &-cta {
+        padding: 0 25px 0 30px;
+        letter-spacing: 0.05em;
+
+        & span.btnlnk-icon {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &-footer {
+    background: $color-gunmetal;
+  }
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 /*
  * Hide visually and from screen readers
  */
+
 .hidden {
   display: none !important;
 }
@@ -208,6 +250,7 @@ html, body {
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -226,6 +269,7 @@ html, body {
 * to be focusable when navigated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
+
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -240,6 +284,7 @@ html, body {
 /*
 * Hide visually and from screen readers, but maintain layout
 */
+
 .invisible {
   visibility: hidden;
 }
@@ -255,6 +300,7 @@ html, body {
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -272,21 +318,28 @@ html, body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 @media print {
   *,
-*:before,
-*:after {
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
@@ -294,39 +347,32 @@ html, body {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
-
   a[href]:after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
   a[href^="#"]:after,
-a[href^="javascript:"]:after {
+  a[href^="javascript:"]:after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -334,23 +380,18 @@ blockquote {
   thead {
     display: table-header-group;
   }
-
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
-
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
