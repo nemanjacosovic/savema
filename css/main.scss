@@ -98,10 +98,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 $main-red: rgba(232, 35, 42, 1);
+$color-main: rgb(232, 35, 42);
+$color-heidelberg-red: rgba(162, 0, 33, 1);
+$color-sandy-brown: rgba(247, 157, 92, 1);
+$color-vivid-tangelo: rgba(243, 117, 43, 1);
+$color-afw: rgba(237, 237, 244, 1);;
+
 $color-gunmetal: #2B2D42;
-$color-grayblue: #8D99AE;
-$color-antiflashwhite: #EDF2F4;
-$color-pumpkin: #FF7F11;
+$color-grey-blue: #8D99AE;
+
+$svm-padding-footer-top: 60px;
+$svm-padding-footer-lr: 30px;
 
 html, body {
   color: $color-gunmetal;
@@ -132,19 +139,20 @@ html, body {
     }
     &-mobile-info {
       position: relative;
-      background: $color-antiflashwhite;
+      background: $color-afw;
       border-bottom: 1px solid rgb(235, 235, 203);
 
       & a {
         color: $main-red;
         line-height: 1em;
+        font-weight: 800;
         vertical-align: middle;
 
         & span {
           padding: 8px;
-          border-radius: 50%;
-          background: white;
           color: $main-red;
+          background: white;
+          border-radius: 50%;
           border: 1px solid $main-red;
 
           &.showtime {
@@ -158,14 +166,14 @@ html, body {
         right: 25%;
         bottom: 0;
         margin: 0;
-        color: $color-grayblue;
         font-size: 11px;
         position: absolute;
         text-align: center;
         letter-spacing: 0.1em;
+        color: $color-grey-blue;
         padding: 0 15px 2px 15px;
         border-radius: 1px 1px 10px 10px;
-        background: $color-antiflashwhite;
+        background: $color-afw;
         transform: translateX(calc(25% + 15px)) translateY(50%);
         box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
         border-top: none;
@@ -205,7 +213,7 @@ html, body {
     }
 
     &-block {
-      padding: 50px 30px 0 30px;
+      padding: 60px 30px 0 30px;
 
       & h2 {
         font-weight: 700;
@@ -226,7 +234,109 @@ html, body {
     }
   }
   &-footer {
-    background: $color-gunmetal;
+    overflow: hidden;
+    color: $color-afw;
+    padding: 30px 0 97px 0;
+    background: $color-grey-blue;
+
+    h4 {
+      font-weight: 700;
+      color: $color-afw;
+      text-transform: uppercase;
+    }
+
+    &-weare {
+      padding-top: $svm-padding-footer-top;
+
+      h4 {
+        padding-left: $svm-padding-footer-lr;
+        padding-right: $svm-padding-footer-lr;
+      }
+    }
+    &-map {
+      padding-top: $svm-padding-footer-top;
+    }
+    &-companyinfo {
+      padding-top: $svm-padding-footer-top;
+      padding-left: $svm-padding-footer-lr;
+      padding-right: $svm-padding-footer-lr;
+      font-size: 1.1em;
+    }
+    &-quicklinks {
+      padding-top: $svm-padding-footer-top;
+    }
+    &-contactus {
+      padding-top: $svm-padding-footer-top;
+      padding-left: $svm-padding-footer-lr;
+      padding-bottom: $svm-padding-footer-top * 2;
+      padding-right: $svm-padding-footer-lr;
+
+      legend {
+        font-weight: 700;
+        font-size: 1.15em;
+      }
+      &-checkgroup {
+        padding-bottom: 5px;
+
+        & label {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      &-reset,
+      &-send {
+        width: 100%;
+        background: white;
+      }
+
+      &-send {
+        font-weight: 800;
+        background: $color-heidelberg-red;
+      }
+    }
+    &-logonmoto {
+      position: relative;
+      padding-top: $svm-padding-footer-top;
+      padding-left: $svm-padding-footer-lr;
+      padding-bottom: $svm-padding-footer-top;
+      padding-right: $svm-padding-footer-lr;
+      background: $color-heidelberg-red;
+
+      &:before {
+        position: absolute;
+        top: -18px;
+        left: -10px;
+        right: -10px;
+        content: "";
+        height: 34px;
+        transform: rotate(5deg);
+        background: $color-heidelberg-red;
+      }
+      &:after {
+        position: absolute;
+        bottom: -18px;
+        left: -10px;
+        right: -10px;
+        content: "";
+        height: 34px;
+        transform: rotate(5deg);
+        background: $color-heidelberg-red;
+      }
+    }
+    &-somedlnks {
+      padding-top: $svm-padding-footer-top;
+      padding-left: $svm-padding-footer-lr;
+      padding-right: $svm-padding-footer-lr;
+
+      & a {
+        color: white;
+      }
+    }
+    &-copylabel {
+      padding-top: $svm-padding-footer-top;
+      padding-left: $svm-padding-footer-lr;
+      padding-right: $svm-padding-footer-lr;
+    }
   }
 }
 

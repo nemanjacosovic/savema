@@ -109,19 +109,20 @@ html, body {
 }
 .savema-header-mobile-info {
   position: relative;
-  background: #EDF2F4;
+  background: #ededf4;
   border-bottom: 1px solid #ebebcb;
 }
 .savema-header-mobile-info a {
   color: #e8232a;
   line-height: 1em;
+  font-weight: 800;
   vertical-align: middle;
 }
 .savema-header-mobile-info a span {
   padding: 8px;
-  border-radius: 50%;
-  background: white;
   color: #e8232a;
+  background: white;
+  border-radius: 50%;
   border: 1px solid #e8232a;
 }
 .savema-header-mobile-info a span.showtime {
@@ -132,14 +133,14 @@ html, body {
   right: 25%;
   bottom: 0;
   margin: 0;
-  color: #8D99AE;
   font-size: 11px;
   position: absolute;
   text-align: center;
   letter-spacing: 0.1em;
+  color: #8D99AE;
   padding: 0 15px 2px 15px;
   border-radius: 1px 1px 10px 10px;
-  background: #EDF2F4;
+  background: #ededf4;
   transform: translateX(calc(25% + 15px)) translateY(50%);
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
   border-top: none;
@@ -171,7 +172,7 @@ html, body {
   padding: 30px 0 0 0;
 }
 .savema-content-block {
-  padding: 50px 30px 0 30px;
+  padding: 60px 30px 0 30px;
 }
 .savema-content-block h2 {
   font-weight: 700;
@@ -187,7 +188,100 @@ html, body {
   margin-left: 10px;
 }
 .savema-footer {
-  background: #2B2D42;
+  overflow: hidden;
+  color: #ededf4;
+  padding: 30px 0 97px 0;
+  background: #8D99AE;
+}
+.savema-footer h4 {
+  font-weight: 700;
+  color: #ededf4;
+  text-transform: uppercase;
+}
+.savema-footer-weare {
+  padding-top: 60px;
+}
+.savema-footer-weare h4 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.savema-footer-map {
+  padding-top: 60px;
+}
+.savema-footer-companyinfo {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.1em;
+}
+.savema-footer-quicklinks {
+  padding-top: 60px;
+}
+.savema-footer-contactus {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-bottom: 120px;
+  padding-right: 30px;
+}
+.savema-footer-contactus legend {
+  font-weight: 700;
+  font-size: 1.15em;
+}
+.savema-footer-contactus-checkgroup {
+  padding-bottom: 5px;
+}
+.savema-footer-contactus-checkgroup label {
+  display: block;
+  margin-bottom: 10px;
+}
+.savema-footer-contactus-reset, .savema-footer-contactus-send {
+  width: 100%;
+  background: white;
+}
+.savema-footer-contactus-send {
+  font-weight: 800;
+  background: #a20021;
+}
+.savema-footer-logonmoto {
+  position: relative;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  padding-right: 30px;
+  background: #a20021;
+}
+.savema-footer-logonmoto:before {
+  position: absolute;
+  top: -18px;
+  left: -10px;
+  right: -10px;
+  content: "";
+  height: 34px;
+  transform: rotate(5deg);
+  background: #a20021;
+}
+.savema-footer-logonmoto:after {
+  position: absolute;
+  bottom: -18px;
+  left: -10px;
+  right: -10px;
+  content: "";
+  height: 34px;
+  transform: rotate(5deg);
+  background: #a20021;
+}
+.savema-footer-somedlnks {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.savema-footer-somedlnks a {
+  color: white;
+}
+.savema-footer-copylabel {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* ==========================================================================
