@@ -1,3 +1,34 @@
+$( document ).ready(function() {
+  var savemaSwitch = '.savema-header-mobile-info-switch a';
+  $(savemaSwitch).on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $(savemaSwitch).find('span').removeClass('showtime');
+    $(this).find('span').addClass('showtime');
+
+    var title = $(this).attr('title');
+    var location = $(this).attr('href');
+    var gates = $('.savema-header-mobile-info-gate').find('a');
+    var hideMe = 'uk-hidden';
+    var showMe = 'uk-visible';
+    var display = $('.savema-header-mobile-info-title');
+
+    for(var i = 0; i < gates.length; i++) {
+      var gate = $(gates[i]);
+      if (gate.is(location)) {
+        if (gate.hasClass(hideMe)) {
+          gate.removeClass(hideMe).addClass(showMe);
+        }
+      } else {
+        gate.removeClass(showMe).addClass(hideMe);
+      }
+    }
+    display.text(title);
+  });
+});
+
+
 //phone number velidation
 function numere(e) {
   var unicode = e.charCode ? e.charCode : e.keyCode;
