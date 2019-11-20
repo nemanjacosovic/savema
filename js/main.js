@@ -28,6 +28,11 @@ $( document ).ready(function() {
   });
 });
 
+$(document).scroll(function() {
+  var mobileInfo = '.savema-header-mobile-info';
+  var scrollClass = 'savema-scrolled';
+  $(mobileInfo).toggleClass(scrollClass, $(document).scrollTop() >= 100);
+});
 
 //phone number velidation
 function numere(e) {
