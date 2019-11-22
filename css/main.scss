@@ -116,7 +116,65 @@ html, body {
 }
 
 .savema {
+  &-mobile-info {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: $color-afw;
+    border-bottom: 1px solid rgb(235, 235, 203);
+
+    & a {
+      color: $main-red;
+      line-height: 1em;
+      font-weight: 800;
+      vertical-align: middle;
+
+      & span {
+        padding: 8px;
+        color: $main-red;
+        background: white;
+        border-radius: 50%;
+        border: 1px solid $main-red;
+
+        &.showtime {
+          color: #ffffff;
+          background: $main-red;
+        }
+      }
+    }
+
+    &-title {
+      right: 25%;
+      bottom: 0;
+      margin: 0;
+      font-size: 11px;
+      position: absolute;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: $color-grey-blue;
+      padding: 0 15px 2px 15px;
+      border-radius: 1px 1px 10px 10px;
+      background: $color-afw;
+      transform: translateX(calc(25% + 15px)) translateY(50%);
+      box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid rgb(219, 219, 187);
+      border-left: none;
+    }
+
+    &.savema-scrolled {
+      top: calc(100%);
+    }
+  }
+
   &-header {
+    margin-top: 79px;
+
+    &.savema-scrolled {
+      padding-top: 69px;
+    }
     &-mobile {
       &.uk-grid {
         margin-top: 10px;
@@ -135,51 +193,6 @@ html, body {
             vertical-align: 1px;
           }
         }
-      }
-    }
-    &-mobile-info {
-      position: relative;
-      background: $color-afw;
-      border-bottom: 1px solid rgb(235, 235, 203);
-
-      & a {
-        color: $main-red;
-        line-height: 1em;
-        font-weight: 800;
-        vertical-align: middle;
-
-        & span {
-          padding: 8px;
-          color: $main-red;
-          background: white;
-          border-radius: 50%;
-          border: 1px solid $main-red;
-
-          &.showtime {
-            color: #ffffff;
-            background: $main-red;
-          }
-        }
-      }
-
-      &-title {
-        right: 25%;
-        bottom: 0;
-        margin: 0;
-        font-size: 11px;
-        position: absolute;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: $color-grey-blue;
-        padding: 0 15px 2px 15px;
-        border-radius: 1px 1px 10px 10px;
-        background: $color-afw;
-        transform: translateX(calc(25% + 15px)) translateY(50%);
-        box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
-        border-top: none;
-        border-right: none;
-        border-bottom: 1px solid rgb(219, 219, 187);
-        border-left: none;
       }
     }
     &-mobile-menu {}

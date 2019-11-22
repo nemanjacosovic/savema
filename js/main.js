@@ -26,6 +26,14 @@ $( document ).ready(function() {
     }
     display.text(title);
   });
+
+  $(window).scroll(function() {
+      var mobileInfo = '.savema-mobile-info';
+      var scrollClass = 'savema-scrolled';
+      $(mobileInfo).toggleClass(scrollClass,
+        $(document).scrollTop() >= 250
+      );
+  });
 });
 
 $(document).on('click', 'a[href^="#"]', function (event) {
@@ -34,12 +42,6 @@ $(document).on('click', 'a[href^="#"]', function (event) {
   $('html, body').animate({
     scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
-});
-
-$(document).scroll(function() {
-  var mobileInfo = '.savema-header-mobile-info';
-  var scrollClass = 'savema-scrolled';
-  $(mobileInfo).toggleClass(scrollClass, $(document).scrollTop() >= 100);
 });
 
 //phone number velidation
