@@ -260,6 +260,39 @@ html, body {
   padding-right: 30px;
 }
 
+.savema-footer-logo {
+  position: relative;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  padding-right: 30px;
+  background: #a20021;
+}
+
+.savema-footer-logo:before {
+  position: absolute;
+  top: -18px;
+  left: -10px;
+  right: -10px;
+  content: "";
+  height: 34px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  background: #a20021;
+}
+
+.savema-footer-logo:after {
+  position: absolute;
+  bottom: -18px;
+  left: -10px;
+  right: -10px;
+  content: "";
+  height: 34px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  background: #a20021;
+}
+
 .savema-footer-map {
   padding-top: 60px;
 }

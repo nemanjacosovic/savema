@@ -287,6 +287,35 @@ html, body {
         padding-right: $svm-padding-footer-lr;
       }
     }
+    &-logo {
+      position: relative;
+      padding-top: $svm-padding-footer-top;
+      padding-left: $svm-padding-footer-lr;
+      padding-bottom: $svm-padding-footer-top;
+      padding-right: $svm-padding-footer-lr;
+      background: $color-heidelberg-red;
+
+      &:before {
+        position: absolute;
+        top: -18px;
+        left: -10px;
+        right: -10px;
+        content: "";
+        height: 34px;
+        transform: rotate(5deg);
+        background: $color-heidelberg-red;
+      }
+      &:after {
+        position: absolute;
+        bottom: -18px;
+        left: -10px;
+        right: -10px;
+        content: "";
+        height: 34px;
+        transform: rotate(5deg);
+        background: $color-heidelberg-red;
+      }
+    }
     &-map {
       padding-top: $svm-padding-footer-top;
     }
