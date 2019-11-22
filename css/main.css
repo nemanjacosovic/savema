@@ -11,8 +11,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -25,13 +24,11 @@ html {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
@@ -42,8 +39,7 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -56,8 +52,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
@@ -65,15 +60,13 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -82,207 +75,170 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
-}
+  padding: 0.2em 0; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 html, body {
   color: #2B2D42;
-  font-family: "Open Sans", sans-serif;
-}
+  font-family: 'Open Sans', sans-serif !important; }
 
 .savema-header-mobile.uk-grid {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
+
 .savema-header-mobile-openclose button {
   width: 100%;
   border: none;
   padding: 5px 0;
   font-weight: 300;
   font-size: 1.37em;
-  border-radius: 34px;
-}
-.savema-header-mobile-openclose button span {
-  vertical-align: 1px;
-}
+  border-radius: 34px; }
+  .savema-header-mobile-openclose button span {
+    vertical-align: 1px; }
+
 .savema-header-mobile-info {
   position: relative;
   background: #ededf4;
-  border-bottom: 1px solid #ebebcb;
-}
-.savema-header-mobile-info a {
-  color: #e8232a;
-  line-height: 1em;
-  font-weight: 800;
-  vertical-align: middle;
-}
-.savema-header-mobile-info a span {
-  padding: 8px;
-  color: #e8232a;
-  background: white;
-  border-radius: 50%;
-  border: 1px solid #e8232a;
-}
-.savema-header-mobile-info a span.showtime {
-  color: #ffffff;
-  background: #e8232a;
-}
-.savema-header-mobile-info-title {
-  right: 25%;
-  bottom: 0;
-  margin: 0;
-  font-size: 11px;
-  position: absolute;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #8D99AE;
-  padding: 0 15px 2px 15px;
-  border-radius: 1px 1px 10px 10px;
-  background: #ededf4;
-  transform: translateX(calc(25% + 15px)) translateY(50%);
-  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid #dbdbbb;
-  border-left: none;
-}
+  border-bottom: 1px solid #ebebcb; }
+  .savema-header-mobile-info a {
+    color: #e8232a;
+    line-height: 1em;
+    font-weight: 800;
+    vertical-align: middle; }
+    .savema-header-mobile-info a span {
+      padding: 8px;
+      color: #e8232a;
+      background: white;
+      border-radius: 50%;
+      border: 1px solid #e8232a; }
+      .savema-header-mobile-info a span.showtime {
+        color: #ffffff;
+        background: #e8232a; }
+  .savema-header-mobile-info-title {
+    right: 25%;
+    bottom: 0;
+    margin: 0;
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #8D99AE;
+    padding: 0 15px 2px 15px;
+    border-radius: 1px 1px 10px 10px;
+    background: #ededf4;
+    transform: translateX(calc(25% + 15px)) translateY(50%);
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #dbdbbb;
+    border-left: none; }
+
 .savema-content-masthead {
   padding: 0 30px;
   background: url("../img/savema-header-bg-3.png") center center no-repeat;
-  background-size: auto 100%;
-}
-.savema-content-masthead-title {
-  font-size: 2.4em;
-  font-weight: 800;
-}
-.savema-content-masthead-title-alt {
-  color: #e8232a;
-}
-.savema-content-masthead .savema-content-masthead-subtitle {
-  margin-top: 10px;
-  font-size: 0.84em;
-}
-.savema-content-masthead-cta {
-  padding: 0 15px 0 30px;
-  letter-spacing: 0.05em;
-}
-.savema-content-masthead p {
-  padding: 30px 0 0 0;
-}
+  background-size: auto 100%; }
+  .savema-content-masthead-title {
+    font-size: 2.4em;
+    font-weight: 800; }
+    .savema-content-masthead-title-alt {
+      color: #e8232a; }
+  .savema-content-masthead .savema-content-masthead-subtitle {
+    margin-top: 10px;
+    font-size: 0.84em; }
+  .savema-content-masthead-cta {
+    padding: 0 30px;
+    letter-spacing: 0.05em; }
+  .savema-content-masthead p {
+    padding: 30px 0 0 0; }
+
 .savema-content-block {
-  padding: 60px 30px 0 30px;
-}
-.savema-content-block h2 {
-  font-weight: 700;
-}
-.savema-content-block-image {
-  margin-bottom: 0;
-}
-.savema-content-block-cta {
-  padding: 0 25px 0 30px;
-  letter-spacing: 0.05em;
-}
-.savema-content-block-cta span.btnlnk-icon {
-  margin-left: 10px;
-}
+  padding: 60px 30px 0 30px; }
+  .savema-content-block h2 {
+    font-weight: 700; }
+  .savema-content-block-image {
+    margin-bottom: 0; }
+  .savema-content-block-cta {
+    padding: 0 25px 0 30px;
+    letter-spacing: 0.05em; }
+    .savema-content-block-cta span.btnlnk-icon {
+      margin-left: 10px; }
+
 .savema-footer {
   overflow: hidden;
   color: #ededf4;
   padding: 30px 0 97px 0;
-  background: #8D99AE;
-}
-.savema-footer h4 {
-  font-weight: 700;
-  color: #ededf4;
-  text-transform: uppercase;
-}
-.savema-footer-weare {
-  padding-top: 60px;
-}
-.savema-footer-weare h4 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.savema-footer-map {
-  padding-top: 60px;
-}
-.savema-footer-companyinfo {
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 1.1em;
-}
-.savema-footer-quicklinks {
-  padding-top: 60px;
-}
-.savema-footer-contactus {
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-bottom: 120px;
-  padding-right: 30px;
-}
-.savema-footer-contactus legend {
-  font-weight: 700;
-  font-size: 1.15em;
-}
-.savema-footer-contactus-checkgroup {
-  padding-bottom: 5px;
-}
-.savema-footer-contactus-checkgroup label {
-  display: block;
-  margin-bottom: 10px;
-}
-.savema-footer-contactus-reset, .savema-footer-contactus-send {
-  width: 100%;
-  background: white;
-}
-.savema-footer-contactus-send {
-  font-weight: 800;
-  background: #a20021;
-}
-.savema-footer-logonmoto {
-  position: relative;
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-bottom: 60px;
-  padding-right: 30px;
-  background: #a20021;
-}
-.savema-footer-logonmoto:before {
-  position: absolute;
-  top: -18px;
-  left: -10px;
-  right: -10px;
-  content: "";
-  height: 34px;
-  transform: rotate(5deg);
-  background: #a20021;
-}
-.savema-footer-logonmoto:after {
-  position: absolute;
-  bottom: -18px;
-  left: -10px;
-  right: -10px;
-  content: "";
-  height: 34px;
-  transform: rotate(5deg);
-  background: #a20021;
-}
-.savema-footer-somedlnks {
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.savema-footer-somedlnks a {
-  color: white;
-}
-.savema-footer-copylabel {
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
+  background: #8D99AE; }
+  .savema-footer h4 {
+    font-weight: 700;
+    color: #ededf4;
+    text-transform: uppercase; }
+  .savema-footer-weare h4 {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .savema-footer-map {
+    padding-top: 60px; }
+  .savema-footer-companyinfo {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.1em; }
+  .savema-footer-quicklinks {
+    padding-top: 60px; }
+  .savema-footer-contactus {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 120px;
+    padding-right: 30px; }
+    .savema-footer-contactus legend {
+      font-weight: 700;
+      font-size: 1.15em; }
+    .savema-footer-contactus-checkgroup {
+      padding-bottom: 5px; }
+      .savema-footer-contactus-checkgroup label {
+        display: block;
+        margin-bottom: 10px; }
+    .savema-footer-contactus-reset, .savema-footer-contactus-send {
+      width: 100%;
+      background: white; }
+    .savema-footer-contactus-send {
+      font-weight: 800;
+      background: #a20021; }
+  .savema-footer-logonmoto {
+    position: relative;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+    background: #a20021; }
+    .savema-footer-logonmoto:before {
+      position: absolute;
+      top: -18px;
+      left: -10px;
+      right: -10px;
+      content: "";
+      height: 34px;
+      transform: rotate(5deg);
+      background: #a20021; }
+    .savema-footer-logonmoto:after {
+      position: absolute;
+      bottom: -18px;
+      left: -10px;
+      right: -10px;
+      content: "";
+      height: 34px;
+      transform: rotate(5deg);
+      background: #a20021; }
+  .savema-footer-somedlnks {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .savema-footer-somedlnks a {
+      color: white; }
+  .savema-footer-copylabel {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px; }
 
 /* ==========================================================================
    Helper classes
@@ -291,8 +247,7 @@ html, body {
  * Hide visually and from screen readers
  */
 .hidden {
-  display: none !important;
-}
+  display: none !important; }
 
 /*
 * Hide only visually, but have it available for screen readers:
@@ -312,8 +267,7 @@ html, body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
-}
+  /* 1 */ }
 
 /*
 * Extends the .sr-only class to allow the element
@@ -328,15 +282,13 @@ html, body {
   overflow: visible;
   position: static;
   white-space: inherit;
-  width: auto;
-}
+  width: auto; }
 
 /*
 * Hide visually and from screen readers, but maintain layout
 */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
 * Clearfix: contain floats
@@ -354,12 +306,10 @@ html, body {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -367,11 +317,11 @@ html, body {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  /* Style adjustments for viewports that meet the condition */ }
+
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* Style adjustments for high resolution devices */ }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -379,72 +329,48 @@ html, body {
    ========================================================================== */
 @media print {
   *,
-*:before,
-*:after {
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
+    text-shadow: none !important; }
   a,
-a:visited {
-    text-decoration: underline;
-  }
-
+  a:visited {
+    text-decoration: underline; }
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
+    content: " (" attr(href) ")"; }
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
+    content: " (" attr(title) ")"; }
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
   a[href^="#"]:after,
-a[href^="javascript:"]:after {
-    content: "";
-  }
-
+  a[href^="javascript:"]:after {
+    content: ""; }
   pre {
-    white-space: pre-wrap !important;
-  }
-
+    white-space: pre-wrap !important; }
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
+    page-break-inside: avoid; }
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
      */
   thead {
-    display: table-header-group;
-  }
-
+    display: table-header-group; }
   tr,
-img {
-    page-break-inside: avoid;
-  }
-
+  img {
+    page-break-inside: avoid; }
   p,
-h2,
-h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
   h2,
-h3 {
-    page-break-after: avoid;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }

@@ -112,7 +112,7 @@ $svm-padding-footer-lr: 30px;
 
 html, body {
   color: $color-gunmetal;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .savema {
@@ -204,7 +204,7 @@ html, body {
         font-size: 0.84em;
       }
       &-cta {
-        padding: 0 15px 0 30px;
+        padding: 0 30px;
         letter-spacing: 0.05em;
       }
       & p {
@@ -246,8 +246,6 @@ html, body {
     }
 
     &-weare {
-      padding-top: $svm-padding-footer-top;
-
       h4 {
         padding-left: $svm-padding-footer-lr;
         padding-right: $svm-padding-footer-lr;
