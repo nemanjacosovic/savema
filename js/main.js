@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  var savemaSwitch = '.savema-header-mobile-info-switch a';
+  var savemaSwitch = '.savema-mobile-info-switch a';
   $(savemaSwitch).on('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -9,10 +9,10 @@ $( document ).ready(function() {
 
     var title = $(this).attr('title');
     var location = $(this).attr('href');
-    var gates = $('.savema-header-mobile-info-gate').find('a');
+    var gates = $('.savema-mobile-info-gate').find('a');
     var hideMe = 'uk-hidden';
     var showMe = 'uk-visible';
-    var display = $('.savema-header-mobile-info-title');
+    var display = $('.savema-mobile-info-title');
 
     for(var i = 0; i < gates.length; i++) {
       var gate = $(gates[i]);

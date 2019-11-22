@@ -145,9 +145,9 @@ html, body {
     }
 
     &-title {
-      right: 25%;
       bottom: 0;
       margin: 0;
+      right: 25%;
       font-size: 11px;
       position: absolute;
       text-align: center;
@@ -165,7 +165,36 @@ html, body {
     }
 
     &.savema-scrolled {
-      top: calc(100%);
+      top: auto;
+      bottom: 0;
+      z-index: 99999;
+      position: fixed;
+
+      &-title {
+        top: 0;
+        bottom: auto;
+        border-radius: 10px 1px 1px 10px;
+        border-top: 1px solid rgb(219, 219, 187);
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+      }
+    }
+  }
+
+  &-totop {
+    // wait on scroll, add effect and remove, then back
+    & a {
+      z-index: 9999;
+      top: 70%;
+      right: 10px;
+      position: fixed;
+      font-size: 0.8em;
+      font-weight: 800;
+      border-radius: 3px;
+      padding: 0 10px 0 0;
+      background: white;
+      border: 1px solid lightgray;
     }
   }
 
@@ -174,6 +203,7 @@ html, body {
 
     &.savema-scrolled {
       padding-top: 69px;
+      transform: translateX(calc(25% + 15px)) translateY(-50%);
     }
     &-mobile {
       &.uk-grid {
@@ -206,21 +236,14 @@ html, body {
       background-size: auto 100%;
 
       &-title {
-        font-size: 2.4em;
+        font-size: 2em;
         font-weight: 800;
           &-alt {
             color: $main-red;
           }
       }
-      & &-subtitle {
-        margin-top: 10px;
-        font-size: 0.84em;
-      }
-      &-cta {
-        padding: 0 30px;
-        letter-spacing: 0.05em;
-      }
       & p {
+        line-height: 1.5em;
         padding: 30px 0 0 0;
       }
     }

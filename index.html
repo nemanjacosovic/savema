@@ -42,14 +42,11 @@
     <script src="js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <div class="savema">
+    <div class="savema" id="sahometop">
       <!-- Mobile Info -->
       <div class="uk-grid uk-grid-collapse uk-padding-small savema-mobile-info uk-hidden@xl uk-hidden@l uk-hidden@m">
-        <div class="uk-width-1-2">
+        <div class="uk-width-1-3">
           <div class="uk-grid uk-grid-small savema-mobile-info-switch">
-            <div class="uk-width-auto">
-              <a href="#infoapr" title="kontakt APR"><span class="uk-inline" uk-icon="icon: bookmark; ratio: 1"></span></a>
-            </div>
             <div class="uk-width-auto">
               <a href="#infoemail" title="kontakt email"><span class="uk-inline" uk-icon="icon: mail; ratio: 1"></span></a>
             </div>
@@ -58,13 +55,16 @@
             </div>
           </div>
         </div>
-        <div class="uk-width-1-2 uk-margin-auto-vertical uk-text-center savema-mobile-info-gate">
-          <a id="infoapr" href="http://pretraga2.apr.gov.rs/EnterpreneurPublicWebSearch/EnterpreneurPublicWebSearchDetails/Details?beid=8555942&rnd=15816EBD632A06DCB2406ECA692D44BD36C41447" title="info APR" class="uk-hidden">PIB: 109923899</a>
-          <a id="infoemail" href="mailto:savemainovacije@gmail.com" title="kontakt email" class="uk-hidden">office@savema.rs</a>
-          <a id="infotel" href="tel:+38163683793" title="kontakt telefon" class="uk-visible">(+381) 063 683 793</a>
+        <div class="uk-width-2-3 uk-margin-auto-vertical uk-text-center savema-mobile-info-gate">
+          <a id="infoemail" href="mailto:savemainovacije@gmail.com" title="kontakt email" class="uk-hidden">savemainovacije@gmail.com</a>
+          <a id="infotel" href="tel:+38163683792" title="kontakt telefon" class="uk-visible">(+381) 063 683 792</a>
         </div>
         <p class="savema-mobile-info-title">kontakt <span id="kontakt-label">telefon</span></p>
       </div>
+      <!-- Back to top -->
+      <!-- <div class="savema-totop">
+          <a href="#sahometop" class="uk-button" title="Na vrh strane"><span class="uk-inline" uk-icon="icon: arrow-up; ratio: 1.39"></span>na vrh</a>
+      </div> -->
       <!-- Header -->
       <header class="savema-header">
         <!-- Mobile Header -->
@@ -118,16 +118,14 @@
       <main class="savema-content">
         <!-- Masthead -->
         <div class="savema-content-masthead">
-          <h1 class="savema-content-masthead-title">Savetnik za <span class="savema-content-masthead-title-alt">hemikalije</span> i <span class="savema-content-masthead-title-alt">bezbednost</span> u transportu opasne robe</h1>
-          <h3 class="savema-content-masthead-subtitle">Savema Inovacije nude licenciranog Savetnika za hemikalije i Savetnika za bezbednost u transportu opasne robe.</h3>
-          <a class="uk-button uk-button-secondary savema-content-masthead-cta" href="#savemakontakt">Detaljnije <span class="uk-inline" uk-icon="icon: arrow-right; ratio: 1"></span></a>
-          <p><strong>SAVEMA INOVACIJE</strong> je agencija koja pruža konsultantske usluge <strong>u oblasti razvoja inovacija</strong> i <strong>unapređenja postojećih tehnologija</strong>.</p>
+          <h1 class="savema-content-masthead-title">Savetnik za <span class="savema-content-masthead-title-alt">hemikalije</span><br>Savetnik za <span class="savema-content-masthead-title-alt">bezbednost</span> u transportu opasne robe</h1>
+          <p>SAVEMA INOVACIJE nudi licenciranog Savetnika za hemikalije, Savetnika za bezbednost u transportu opasne robe i pruža konsultantske usluge u oblasti razvoja inovacija i unapređenja postojećih tehnologija.</p>
         </div>
         <!-- Block A -->
         <div class="savema-content-block" id="dobrodosli">
           <img class="uk-align-center savema-content-block-image" data-src="img/savema-block-a.png" width="50%" height="" alt="Savema" uk-img>
           <h2>Dobrodošli</h2>
-          <p>SAVEMA INOVACIJE Čačak, konsultantska kuća koja se bavi pružanjem usluga Savetnika za hemikalije i Savetnika za bezbednost u transportu opasne robe u drumskom i železničkom saobraćaju ADR/RID. Takođe, nudimo konsultantske usluge za razvoj inovativnih proizvoda i usluga u različitim oblastima hemijske, farmaceutske i prehrambene industrije.</p>
+          <p>SAVEMA INOVACIJE Čačak je agencija koja pruža usluge Savetnika za hemikalije i Savetnika za bezbednost u transportu opasne robe u drumskom i železničkom saobraćaju ADR/RID. Takođe, nudimo konsultantske usluge za razvoj inovativnih proizvoda i usluga u različitim oblastima hemijske, farmaceutske i prehrambene industrije.</p>
           <a class="uk-button uk-button-secondary savema-content-block-cta" href="#savemakontakt">Kontakt <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block B -->
@@ -135,14 +133,14 @@
           <img class="uk-align-center savema-content-block-image" data-src="img/savema-block-b.jpeg" width="50%" height="" alt="Savema" uk-img>
           <h2>Savetnik za hemikalije</h2>
           <p>Pružamo usluge licenciranog Savetnika za hemikalije u oblasti pravilne primene Zakona o hemikalijama i Zakona o biocidima i propisa donetih na osnovu njih.</p>
-          <p>Za Vas u okviru usluga Savetnika za hemikalije vršimo sve aktivnosti koje su potrebne za održavanje zakonskih uslova u poslovanju, nesmetan rad i uspešno poslovanje:</p>
+          <p>Za Vas u okviru usluga Savetnika za hemikalije vršimo sve aktivnosti koje su potrebne za održavanje zakonskih uslova u poslovanju i uspešan rad:</p>
           <ul>
             <li>Praćenje zakonskih i podzakonskih regulativa u oblasti hemikalija i biocidnih proizvoda;</li>
             <li>Izrada dokumentacije za upis hemikalija u registar hemikalija (Dosije o hemikaliji);</li>
             <li>Primena odredbi koje se odnose na klasifikaciju, pakovanje, obeležavanje i oglašavanje hemikalija;</li>
             <li>Izrada bezbednosnog lista u skladu sa zakonskom regulativom Republike Srbije za hemikaliju koja se stavlja u promet;</li>
             <li>Priprema nacrta etiketa;</li>
-            <li>Usluge vođenja evidencije hemikalija i biocide</li>
+            <li>Usluge vođenja evidencije hemikalija i biocida;</li>
             <li>Sprovođenje nepohodne procedure u vezi uvoza i izvoza određenih opasnih hemikalija;</li>
             <li>Informisanje i saradnja na primeni zabrana i ograničenja proizvodnje, stavljanja u promet i korišćenja određenih opasnih hemikalija;</li>
             <li>Priprema dokumentacije za dobijanje dozvole za promet, odnosno korišćenje naročito opasnih hemikalija;</li>
@@ -151,7 +149,7 @@
             <li>Sprovođenje odredbi Zakona o biocidnim proizvodima;</li>
             <li>Saradnja sa nadležnim inspekcijskim organima;</li>
           </ul>
-          <p>Pozivamo vas da nam se obratite za detaljnije informacije.</p>
+          <p>Pozivamo Vas da nam se obratite za detaljnije informacije.</p>
           <a class="uk-button uk-button-secondary savema-content-block-cta" href="#savemakontakt">Kontakt<span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block C -->
@@ -164,7 +162,7 @@
           <ul>
             <li>Savetovanje u aktivnostima privrednog društva vezanim sa transport opasnе robe;</li>
             <li>Praćenje primene propisa koji se odnose na transport opasne robe;</li>
-            <li>Primena zahteva za identifikaciju opasne robe koja se transportuje;</li>
+            <li>Postupci, kojima se obezbeđuje primena zahteva za identifikaciju opasne robe koja se transportuje;</li>
             <li>Provera opreme koja je u vezi sa transportom, pakovanjem, punjenjem, utovarom ili istovarom opasne robe;</li>
             <li>Obuka zaposlenih koji rukuju opasnom robom, uključujući izmene propisa i vođenje evidencije o izvršenim obukama;</li>
             <li>Sprovođenje odgovarajućih hitnih mera pri eventualnim nezgodama ili vanrednim događajima, koje mogu da ugroze bezbednost u toku transporta opasne robe, pakovanja, punjenja, utovara ili istovara;</li>
@@ -173,7 +171,7 @@
             <li>Izrada Godišnjeg izveštaja za rukovodstvo privrednog društva ili eventualno za lokalne organe vlasti o aktivnostima u vezi sa transportom opasnе robe;</li>
             <li>Saradnja sa nadležnim inspekcijskim organima;</li>
           </ul>
-          <p>Pozivamo vas da nam se obratite za detaljnije informacije.</p>
+          <p>Pozivamo Vas da nam se obratite za detaljnije informacije.</p>
           <a class="uk-button uk-button-secondary savema-content-block-cta" href="#savemakontakt">kontakt <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block D -->
@@ -202,7 +200,6 @@
           <p>Sa dugogodišnjim iskustvom u razvoju i komercijalizaciji inovacija, možemo Vam pomoći da primenite neke od najboljih praksi za razvoj inovacija, kako bi inovaciju uspešno realizovali u skladu sa strategijom rasta vaše kompanije.</p>
           <p>Naše usluge uključuju:</p>
           <ul>
-            <li>Upravljanje procesom generisanja ideja;</li>
             <li>Procena tehnološke i komercijalne spremnosti inovacije;</li>
             <li>Definisanje strategije razvoja inovacija, potencijalnih proizvoda ili usluga;</li>
             <li>Identifikacija trenutnih tehnoloških trendova u polju interesovanja klijenta;</li>
@@ -215,68 +212,66 @@
             <li>Usluge u oblasti zaštite intelektualne svojine, pre svega za pripremu prijave patenata i registraciju autorskih prava na nacionalnom i međunarodnom nivou;</li>
             <li>Angažovanje stručnjaka Konsultanta koji će pružiti stručnu pomoć - ekspertizu u različitim fazama ispitivanja i komercijalizacije;</li>
           </ul>
-          <p>Pozivamo vas da nam se obratite za detaljnije informacije.</p>
+          <p>Pozivamo Vas da nam se obratite za detaljnije informacije.</p>
           <a class="uk-button uk-button-secondary savema-content-block-cta" href="#savemakontakt">kontakt <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
         <!-- Block F -->
         <div class="savema-content-block" id="sasertif">
-          <h2>Sertifikati i nagrade</h2>
-          <p>Sretko Popadić</p>
-          <li>Trostruki finalista takmičenja Najbolja tehnološka inovacija Srbije NTI2010, NTI2012 i NTI2015. godine</li>
-          <li>Zlatna medalja na Festivalu inovacija TESLA FEST 2010, u Novom Sadu</li>
-          <li>Pobednik međunarodnog takmičenja inovacija Pioneers of the Balkan, Zagreb 2015.godine </li>
-          <li>Pobednik takmičenja Catch foundcenter investment, Beograd 2016. godine</li>
-          <li>Pobednik takmičenja Delta biznis inkubator, Beograd 2018. godine</li>
-          <p>Sanja Popadić</p>
-          <li>Dvostruka finalistkinja takmičenja Najbolja tehnološka inovacija Srbije NTI2010 i NTI2012 godine</li>
-          <li>Zlatna medalja na Festivalu inovacija TESLA FEST 2010, u Novom Sadu</li>
-          <li>Uverenje Savetnika za hemikalije 2012- Hemijski fakultet, Beograd, obnovljena licenca 2018.godine</li>
-            <li>Sertifikat Savetnika za bezbednost u transportu opasne robe ADR/RID, Uprava za transport opasnog tereta, Beograd 2015.godine</li>
+          <h2>Tim</h2>
+          <!-- Info o nama -->
+          <div class="savema-footer-weare">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="img/sanja_popadic-savema.jpg" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Sanja Popadić</h3>
+                  <p>Sanja Popadić je završila studije na Tehnološko-metalurškom fakultetu u Beogradu na profilu - hemijsko inženjerstvo. Radno iskustvo je stekla u kompaniji <a href="http://www.epoksan.rs/" title="Epoksan - Industrijski epoksidni podovi">EPOKSAN d.o.o.</a>, kao tehnolog razvoja u oblasti proizvodnje epoksidnih industrijskih podova, premaza i adheziva.</p>
+                  <ul>
+                    <li>Dvostruka finalistkinja takmičenja Najbolja tehnološka inovacija Srbije NTI2010 i NTI2012 godine</li>
+                    <li>Zlatna medalja na Festivalu inovacija <a href="http://www.teslafest.com/" title="Početna - Savez Pronalazača Vojvodine"></a> TESLA FEST 2010, u Novom Sadu</li>
+                    <li>Licenca Savetnika za hemikalije 2012- Hemijski fakultet, Beograd, obnovljena licenca 2018. godine</li>
+                    <li>Sertifikat Savetnika za bezbednost u transportu opasne robe ADR/RID, Uprava za transport opasnog tereta, Beograd 2015. godine</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="img/sretko_popadic-savema.jpg" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Sretko Popadić</h3>
+                  <p>Sretko Popadić je završio studije na Tehnološko-metalurškom fakultetu u Beogradu na profilu - organsko hemijska tehnologija i polimerno inženjerstvo. Na poslediplomskim studijama na Farmaceutskom i Hemijskom fakultetu Univerziteta u Beogradu usvojio je potrebno znanje iz oblasti kozmetologije i hemije životne sredine. Radno iskustvo je sticao u kompaniji <a href="http://www.prvaiskra-namenska.com/" title="Prva iskra – namenska proizvodnja a.d. | Serbia | Production of Explosives">Prva Iskra - Namenska proizvodnja Barič</a>, <a href="http://www.epoksan.rs/" title="Epoksan - Industrijski epoksidni podovi">EPOKSAN d.o.o.</a>, kao direktor <a href="https://ntpcacak.rs/" title="Научно технолошки парк - Чачак">Naučno tehnološki park - Čačak</a> i SAVEMA GmbH Berlin.</p>
+                  <ul>
+                    <li>Trostruki finalista takmičenja Najbolja tehnološka inovacija Srbije NTI2010, NTI2012 i NTI2015. godine</li>
+                    <li>Zlatna medalja na Festivalu inovacija TESLA FEST 2010, u Novom Sadu</li>
+                    <li>Pobednik međunarodnog takmičenja inovacija <a href="https://pioneersofthebalkans.io" title="Pioneers of the Balkans - Pioneers of the Balkans">Pioneers of the Balkan</a>, Zagreb 2015. godine | (<a href="https://www.ozonpress.net/ekonomija/tim-iz-cacka-pobedio-u-zagrebu/" title="Tim iz Čačka pobedio u Zagrebu - Ozonpress :: internet portal">novinski članak</a>)</li>
+                    <li>Pobednik međunarodnog takmičenja <a href="https://www.foundcenter.com/catch" title="Catch - Foundcenter Investment">Catch foundcenter investment</a>, Beograd 2016. godine</li>
+                    <li>Pobednik takmičenja <a href="https://deltabiznisinkubator.rs/izabran-pobednik-delta-biznis-inkubatora/" title="DELTA BIZNIS INKUBATOR | Izabran pobednik Delta Biznis Inkubatora"></a> Delta biznis inkubator, Beograd 2018. godine</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Block G -->
         <div class="savema-content-block" id="sasarad">
-          <h2>Sarađujemo sa</h2>
-          <li>Tehnološko- metalurški fakultet Univerziteta u Beogradu</li>
-          <li>Farmaceutski fakultet Univerziteta u Beogradu</li>
-          <li>Hemijski fakultet Univerziteta u Beogradu </li>
-          <li>Fakultet tehničkih nauka u Čačku</li>
-          <li>Privredna komora Srbije, Beograd</li>
-          <li>Regionalna privredna komora Kraljevo</li>
-          <li>Organizacija Najbolja tehnološka inovacija, Beograd</li>
+          <h2>Saradnja</h2>
+          <ul>
+            <li>Inovacioni Centar Tehnološko- metalurškog fakultet Univerziteta u Beogradu</li>
+            <li>Centar za transfer tehnologije Univerziteta u Beogradu</li>
+            <li>Hemijski fakultet Univerziteta u Beogradu </li>
+            <li>Agronomski fakultet u Čačku</li>
+          </ul>
         </div>
       </main>
       <!-- Footer -->
       <footer class="savema-footer" id="footer">
-        <!-- Info o nama -->
-        <div class="savema-footer-weare">
-          <h4>Savetnik za hemikalije Savetnik za bezbednost u transportu opasne robe</h4>
-          <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-card-media-left uk-cover-container">
-              <img src="https://img.freepik.com/free-photo/businesswoman-leader-modern-office-with-businesspeople-workin_1139-954.jpg?size=626&ext=jpg" alt="" uk-cover>
-              <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">Sanja Popadić</h3>
-                <p>Sanja Popadić je završila studije na Tehnološko-metalurškom fakultetu u Beogradu na profilu - hemijsko inženjerstvo. Radno iskustvo je stekla u kompaniji EPOKSAN DOO Čačak, kao tehnolog razvoja u oblasti proizvodnje epoksidnih industrijskih podova, premaza i adheziva.</p>
-              </div>
-            </div>
-          </div>
-          <h4>Konsalting iz oblasti inovacija i postojećih tehnologija</h4>
-          <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-card-media-left uk-cover-container">
-              <img src="http://images2.kurir.rs/slika-620x419/faundsenter-investment-preduzetnici-foto-zorana-jevtic-1475015874-1000195.jpg" alt="" uk-cover>
-              <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">Sretko Popadić</h3>
-                <p>Sretko Popadić je završio studije na Tehnološko-metalurškom fakultetu u Beogradu na profilu - organsko hemijska tehnologija i polimerno inženjerstvo. Na poslediplomskim studijama na Farmaceutskom i Hemijskom fakultetu Univerziteta u Beogradu usvojio je potrebno znanje iz oblasti kozmetologije i hemije životne sredine. Radno iskustvo je stekao u kompaniji Prva Iskra - Namenska industrija Barič, EPOKSAN DOO Čačak, kao direktor Naučno tehnološkog parka u Čačku i SAVEMA GmbH Berlin.</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Kontakt forma -->
         <div class="savema-footer-contactus">
           <h4 id="savemakontakt">Kontakt formular</h4>
@@ -304,9 +299,6 @@
                   <label><input class="uk-checkbox" name="topic[]" value="konsalting" type="checkbox"> Konsalting</label>
                 </div>
               </div>
-            </fieldset>
-            <fieldset class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-              <label><input class="uk-checkbox" name="urgent" value="hitan odgovor" type="checkbox"> Potreban hitan odgovor?</label>
             </fieldset>
             <fieldset class="uk-margin">
               <div class="uk-grid">

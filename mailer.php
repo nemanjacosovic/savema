@@ -6,7 +6,7 @@ if (isset($_POST['Submit'])) {
   $mail = $_POST['mail'];
   $phone = $_POST['phone'];
   $message = $_POST['message'];
-  $urgent = $_POST['urgent'];
+  $urgent = $_POST['urgent']; // REMOVED
   $topic = $_POST['topic'];
 
   function topicSelected()
