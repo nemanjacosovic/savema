@@ -88,6 +88,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a {
+  color: #e8232a;
+}
+
 html, body {
   color: #2B2D42;
   font-family: 'Open Sans', sans-serif !important;
@@ -105,12 +109,12 @@ html, body {
 .savema-mobile-info a {
   color: #e8232a;
   line-height: 1em;
-  font-weight: 800;
+  font-weight: 400;
   vertical-align: middle;
 }
 
 .savema-mobile-info a span {
-  padding: 8px;
+  padding: 6px;
   color: #e8232a;
   background: white;
   border-radius: 50%;
@@ -126,16 +130,17 @@ html, body {
   bottom: 0;
   margin: 0;
   right: 25%;
+  width: 125px;
   font-size: 11px;
   position: absolute;
   text-align: center;
   letter-spacing: 0.1em;
   color: #8D99AE;
-  padding: 0 15px 2px 15px;
+  padding: 0 0 2px 0;
   border-radius: 1px 1px 10px 10px;
   background: #ededf4;
-  -webkit-transform: translateX(calc(25% + 15px)) translateY(50%);
-          transform: translateX(calc(25% + 15px)) translateY(50%);
+  -webkit-transform: translateX(calc(15% + 15px)) translateY(50%);
+          transform: translateX(calc(15% + 15px)) translateY(50%);
   -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
   border-top: none;
@@ -147,35 +152,41 @@ html, body {
 .savema-mobile-info.savema-scrolled {
   top: auto;
   bottom: 0;
-  z-index: 99999;
+  z-index: 900;
   position: fixed;
+  border-top: 1px solid #ebebcb;
+  border-bottom: none;
 }
 
-.savema-mobile-info.savema-scrolled-title {
-  top: 0;
+.savema-mobile-info.savema-scrolled .savema-mobile-info-title {
+  top: -20px;
   bottom: auto;
-  border-radius: 10px 1px 1px 10px;
+  border-radius: 10px 10px 1px 1px;
   border-top: 1px solid #dbdbbb;
   border-right: none;
   border-bottom: none;
   border-left: none;
+  -webkit-box-shadow: 0 -3px 2px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 -3px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .savema-totop a {
-  z-index: 9999;
-  top: 70%;
-  right: 10px;
+  top: 5%;
+  opacity: 0;
+  right: 15px;
+  z-index: 900;
   position: fixed;
   font-size: 0.8em;
-  font-weight: 800;
+  line-height: 1em;
+  font-weight: 700;
   border-radius: 3px;
-  padding: 0 10px 0 0;
-  background: white;
-  border: 1px solid lightgray;
+  padding: 5px 10px 5px 0;
+  background: rgba(237, 237, 244, 0.9);
+  border-bottom: 1px solid lightgray;
 }
 
 .savema-header {
-  margin-top: 79px;
+  padding: 79px 15px 0 15px;
 }
 
 .savema-header.savema-scrolled {
@@ -201,6 +212,10 @@ html, body {
   vertical-align: 1px;
 }
 
+.savema-header-mobile-menu li {
+  padding: 7px 0;
+}
+
 .savema-content-masthead {
   padding: 0 30px;
   background: url("../img/savema-header-bg-3.png") center center no-repeat;
@@ -218,7 +233,8 @@ html, body {
 
 .savema-content-masthead p {
   line-height: 1.5em;
-  padding: 30px 0 0 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .savema-content-block {
@@ -233,6 +249,10 @@ html, body {
   margin-bottom: 0;
 }
 
+.savema-content-block li {
+  padding-bottom: 15px;
+}
+
 .savema-content-block-cta {
   padding: 0 25px 0 30px;
   letter-spacing: 0.05em;
@@ -245,8 +265,7 @@ html, body {
 .savema-footer {
   overflow: hidden;
   color: #ededf4;
-  padding: 30px 0 97px 0;
-  background: #8D99AE;
+  padding: 60px 0 0 0;
 }
 
 .savema-footer h4 {
@@ -297,18 +316,8 @@ html, body {
   padding-top: 60px;
 }
 
-.savema-footer-companyinfo {
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 1.1em;
-}
-
-.savema-footer-quicklinks {
-  padding-top: 60px;
-}
-
 .savema-footer-contactus {
+  background: #8D99AE;
   padding-top: 60px;
   padding-left: 30px;
   padding-bottom: 120px;
@@ -316,8 +325,8 @@ html, body {
 }
 
 .savema-footer-contactus legend {
-  font-weight: 700;
-  font-size: 1.15em;
+  font-weight: 300;
+  font-size: 1em;
 }
 
 .savema-footer-contactus-checkgroup {
@@ -372,7 +381,21 @@ html, body {
   background: #a20021;
 }
 
+.savema-footer-companyinfo {
+  overflow: auto;
+  background: #8D99AE;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.1em;
+}
+
+.savema-footer-quicklinks {
+  padding-top: 60px;
+}
+
 .savema-footer-somedlnks {
+  background: #8D99AE;
   padding-top: 60px;
   padding-left: 30px;
   padding-right: 30px;
@@ -383,9 +406,9 @@ html, body {
 }
 
 .savema-footer-copylabel {
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 0.9em;
+  background: #8D99AE;
+  padding: 30px 30px 130px 30px;
 }
 
 /* ==========================================================================

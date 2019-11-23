@@ -45,26 +45,28 @@
     <div class="savema" id="sahometop">
       <!-- Mobile Info -->
       <div class="uk-grid uk-grid-collapse uk-padding-small savema-mobile-info uk-hidden@xl uk-hidden@l uk-hidden@m">
-        <div class="uk-width-1-3">
+        <!-- Dials -->
+        <div class="uk-width-auto">
           <div class="uk-grid uk-grid-small savema-mobile-info-switch">
             <div class="uk-width-auto">
-              <a href="#infoemail" title="kontakt email"><span class="uk-inline" uk-icon="icon: mail; ratio: 1"></span></a>
+              <a href="#infoemail" title="kontakt email"><span class="uk-inline" uk-icon="icon: mail; ratio: 1.2"></span></a>
             </div>
             <div class="uk-width-auto">
-              <a href="#infotel" title="kontakt telefon"><span class="uk-inline uk-margin-right showtime" uk-icon="icon: receiver; ratio: 1" ></span></a>
+              <a href="#infotel" title="kontakt telefon"><span class="uk-inline uk-margin-right showtime" uk-icon="icon: receiver; ratio: 1.2"></span></a>
             </div>
           </div>
         </div>
-        <div class="uk-width-2-3 uk-margin-auto-vertical uk-text-center savema-mobile-info-gate">
+        <!-- Gate -->
+        <div class="uk-width-expand uk-margin-auto-vertical uk-text-center savema-mobile-info-gate">
           <a id="infoemail" href="mailto:savemainovacije@gmail.com" title="kontakt email" class="uk-hidden">savemainovacije@gmail.com</a>
           <a id="infotel" href="tel:+38163683792" title="kontakt telefon" class="uk-visible">(+381) 063 683 792</a>
         </div>
         <p class="savema-mobile-info-title">kontakt <span id="kontakt-label">telefon</span></p>
       </div>
       <!-- Back to top -->
-      <!-- <div class="savema-totop">
-          <a href="#sahometop" class="uk-button" title="Na vrh strane"><span class="uk-inline" uk-icon="icon: arrow-up; ratio: 1.39"></span>na vrh</a>
-      </div> -->
+      <div class="savema-totop uk-transition-toggle">
+          <a href="#sahometop" class="uk-button -fade" title="Na vrh strane"><span class="uk-inline" uk-icon="icon: arrow-up; ratio: 1.5"></span>na vrh</a>
+      </div>
       <!-- Header -->
       <header class="savema-header">
         <!-- Mobile Header -->
@@ -80,8 +82,8 @@
         </div>
         <!-- Main menu | Mobile -->
         <nav id="mm-mobile" uk-offcanvas>
-          <div class="uk-offcanvas-bar">
-            <ul class="uk-nav">
+          <div class="uk-offcanvas-bar savema-header-mobile-menu">
+            <ul class="uk-nav uk-flex uk-flex-column uk-flex-stretch">
               <li class="uk-active">
                 <a href="/" title="Savema homepage">Naslovna</a>
               </li>
@@ -104,10 +106,10 @@
                 <a href="#sasarad" title="Savema sarađuje sa">Saradnja</a>
               </li>
               <li>
-                <a href="#savemakontakt" title="Savema pošalji poruku">Pošalji poruku</a>
+                <a href="#sakoinfo" title="Savema Kontakt info">Adresa, PIB, radno vreme</a>
               </li>
               <li>
-                <a href="#sakoinfo" title="Savema Kontakt info">Kontakt info</a>
+                <a href="#savemakontakt" title="Savema pošalji poruku">Kontakt</a>
               </li>
             </ul>
           </div>
@@ -119,6 +121,7 @@
         <!-- Masthead -->
         <div class="savema-content-masthead">
           <h1 class="savema-content-masthead-title">Savetnik za <span class="savema-content-masthead-title-alt">hemikalije</span><br>Savetnik za <span class="savema-content-masthead-title-alt">bezbednost</span> u transportu opasne robe</h1>
+          <a class="uk-button uk-button-secondary savema-content-block-cta" href="#savemakontakt">Kontakt <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
           <p>SAVEMA INOVACIJE nudi licenciranog Savetnika za hemikalije, Savetnika za bezbednost u transportu opasne robe i pruža konsultantske usluge u oblasti razvoja inovacija i unapređenja postojećih tehnologija.</p>
         </div>
         <!-- Block A -->
@@ -271,6 +274,7 @@
             <li>Hemijski fakultet Univerziteta u Beogradu </li>
             <li>Agronomski fakultet u Čačku</li>
           </ul>
+          <a class="uk-button uk-button-secondary savema-content-block-cta" href="#savemakontakt">Kontakt<span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
         </div>
       </main>
       <!-- Footer -->
@@ -300,7 +304,7 @@
             <fieldset class="uk-margin uk-grid-small uk-child-width-auto uk-grid savema-footer-contactus-checkgroup">
               <div class="uk-grid">
                 <div class="uk-width-1-2">
-                  <legend class="uk-legend">Molimo vas da označite temu koja je vezana za vaš upit.</legend>
+                  <legend class="uk-legend"><span class="uk-inline" uk-icon="icon: info; ratio: 1"></span> Molimo vas da označite temu koja je vezana za vaš upit.</legend>
                 </div>
                 <div class="uk-width-1-2">
                   <label><input class="uk-checkbox" name="topic[]" value="hemikalije" type="checkbox"> Hemikalije</label>
@@ -342,37 +346,37 @@
             <p>Radno vreme:<br><strong>ponedeljak</strong> - <strong>petak</strong><br>od <strong>10</strong> do <strong>14h</strong></p>
           </div>
         </div>
-        <!-- Social media -->
-        <!-- <div class="savema-footer-somedlnks">
-          <h4>Društvene mreže</h4>
-          <ul class="uk-list uk-flex uk-flex-around">
-            <li class="uk-margin-remove">
-              <a>
-                <span class="uk-inline" uk-icon="icon: instagram; ratio: 2"></span>
-              </a>
-            </li>
-            <li class="uk-margin-remove">
-              <a>
-                <span class="uk-inline" uk-icon="icon: facebook; ratio: 2"></span>
-              </a>
-            </li>
-            <li class="uk-margin-remove">
-              <a>
-                <span class="uk-inline" uk-icon="icon: twitter; ratio: 2"></span>
-              </a>
-            </li>
-            <li class="uk-margin-remove">
-              <a>
-                <span class="uk-inline" uk-icon="icon: youtube; ratio: 2"></span>
-              </a>
-            </li>
-          </ul>
-        </div> -->
         <div class="savema-footer-copylabel uk-text-center">Copyright &copy; 2019 SAVEMA<br><span title="Sva prava zadržana.">All rights reserved.</span></div>
       </footer>
       <!-- Call Us shortcut -->
       <div class="savema-info-bottom" id="savema-hover"></div>
     </div>
+    <!-- Social media -->
+    <!-- <div class="savema-footer-somedlnks">
+      <h4>Društvene mreže</h4>
+      <ul class="uk-list uk-flex uk-flex-around">
+        <li class="uk-margin-remove">
+          <a>
+            <span class="uk-inline" uk-icon="icon: instagram; ratio: 2"></span>
+          </a>
+        </li>
+        <li class="uk-margin-remove">
+          <a>
+            <span class="uk-inline" uk-icon="icon: facebook; ratio: 2"></span>
+          </a>
+        </li>
+        <li class="uk-margin-remove">
+          <a>
+            <span class="uk-inline" uk-icon="icon: twitter; ratio: 2"></span>
+          </a>
+        </li>
+        <li class="uk-margin-remove">
+          <a>
+            <span class="uk-inline" uk-icon="icon: youtube; ratio: 2"></span>
+          </a>
+        </li>
+      </ul>
+    </div> -->
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>

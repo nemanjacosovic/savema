@@ -110,6 +110,10 @@ $color-grey-blue: #8D99AE;
 $svm-padding-footer-top: 60px;
 $svm-padding-footer-lr: 30px;
 
+a {
+  color: $color-main;
+}
+
 html, body {
   color: $color-gunmetal;
   font-family: 'Open Sans', sans-serif !important;
@@ -127,11 +131,11 @@ html, body {
     & a {
       color: $main-red;
       line-height: 1em;
-      font-weight: 800;
+      font-weight: 400;
       vertical-align: middle;
 
       & span {
-        padding: 8px;
+        padding: 6px;
         color: $main-red;
         background: white;
         border-radius: 50%;
@@ -148,15 +152,16 @@ html, body {
       bottom: 0;
       margin: 0;
       right: 25%;
+      width: 125px;
       font-size: 11px;
       position: absolute;
       text-align: center;
       letter-spacing: 0.1em;
       color: $color-grey-blue;
-      padding: 0 15px 2px 15px;
+      padding: 0 0 2px 0;
       border-radius: 1px 1px 10px 10px;
       background: $color-afw;
-      transform: translateX(calc(25% + 15px)) translateY(50%);
+      transform: translateX(calc(15% + 15px)) translateY(50%);
       box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
       border-top: none;
       border-right: none;
@@ -167,39 +172,44 @@ html, body {
     &.savema-scrolled {
       top: auto;
       bottom: 0;
-      z-index: 99999;
+      z-index: 900;
       position: fixed;
+      border-top: 1px solid rgb(235, 235, 203);
+      border-bottom: none;
+    }
 
-      &-title {
-        top: 0;
-        bottom: auto;
-        border-radius: 10px 1px 1px 10px;
-        border-top: 1px solid rgb(219, 219, 187);
-        border-right: none;
-        border-bottom: none;
-        border-left: none;
-      }
+    &.savema-scrolled &-title {
+      top: -20px;
+      bottom: auto;
+      border-radius: 10px 10px 1px 1px;
+      border-top: 1px solid rgb(219, 219, 187);
+      border-right: none;
+      border-bottom: none;
+      border-left: none;
+      box-shadow: 0 -3px 2px 0 rgba(0,0,0,0.05);
     }
   }
 
   &-totop {
     // wait on scroll, add effect and remove, then back
     & a {
-      z-index: 9999;
-      top: 70%;
-      right: 10px;
+      top: 5%;
+      opacity: 0;
+      right: 15px;
+      z-index: 900;
       position: fixed;
       font-size: 0.8em;
-      font-weight: 800;
+      line-height: 1em;
+      font-weight: 700;
       border-radius: 3px;
-      padding: 0 10px 0 0;
-      background: white;
-      border: 1px solid lightgray;
+      padding: 5px 10px 5px 0;
+      background: rgba($color-afw,0.9);
+      border-bottom: 1px solid lightgray;
     }
   }
 
   &-header {
-    margin-top: 79px;
+    padding: 79px 15px 0 15px;
 
     &.savema-scrolled {
       padding-top: 69px;
@@ -225,7 +235,11 @@ html, body {
         }
       }
     }
-    &-mobile-menu {}
+    &-mobile-menu {
+      li {
+        padding: 7px 0;
+      }
+    }
 
     &-desktop {}
   }
@@ -244,7 +258,8 @@ html, body {
       }
       & p {
         line-height: 1.5em;
-        padding: 30px 0 0 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
       }
     }
 
@@ -257,6 +272,10 @@ html, body {
 
       &-image {
         margin-bottom: 0;
+      }
+
+      li {
+        padding-bottom: 15px;
       }
 
       &-cta {
@@ -272,8 +291,7 @@ html, body {
   &-footer {
     overflow: hidden;
     color: $color-afw;
-    padding: 30px 0 97px 0;
-    background: $color-grey-blue;
+    padding: 60px 0 0 0;
 
     h4 {
       font-weight: 700;
@@ -319,24 +337,16 @@ html, body {
     &-map {
       padding-top: $svm-padding-footer-top;
     }
-    &-companyinfo {
-      padding-top: $svm-padding-footer-top;
-      padding-left: $svm-padding-footer-lr;
-      padding-right: $svm-padding-footer-lr;
-      font-size: 1.1em;
-    }
-    &-quicklinks {
-      padding-top: $svm-padding-footer-top;
-    }
     &-contactus {
+      background: $color-grey-blue;
       padding-top: $svm-padding-footer-top;
       padding-left: $svm-padding-footer-lr;
       padding-bottom: $svm-padding-footer-top * 2;
       padding-right: $svm-padding-footer-lr;
 
       legend {
-        font-weight: 700;
-        font-size: 1.15em;
+        font-weight: 300;
+        font-size: 1em;
       }
       &-checkgroup {
         padding-bottom: 5px;
@@ -386,7 +396,19 @@ html, body {
         background: $color-heidelberg-red;
       }
     }
+    &-companyinfo {
+      overflow: auto;
+      background: $color-grey-blue;
+      padding-top: $svm-padding-footer-top;
+      padding-left: $svm-padding-footer-lr;
+      padding-right: $svm-padding-footer-lr;
+      font-size: 1.1em;
+    }
+    &-quicklinks {
+      padding-top: $svm-padding-footer-top;
+    }
     &-somedlnks {
+      background: $color-grey-blue;
       padding-top: $svm-padding-footer-top;
       padding-left: $svm-padding-footer-lr;
       padding-right: $svm-padding-footer-lr;
@@ -396,9 +418,9 @@ html, body {
       }
     }
     &-copylabel {
-      padding-top: $svm-padding-footer-top;
-      padding-left: $svm-padding-footer-lr;
-      padding-right: $svm-padding-footer-lr;
+      font-size: 0.9em;
+      background: $color-grey-blue;
+      padding: $svm-padding-footer-lr $svm-padding-footer-lr 130px $svm-padding-footer-lr;
     }
   }
 }

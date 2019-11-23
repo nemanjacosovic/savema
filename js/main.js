@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+  var isScrolling;
   var savemaSwitch = '.savema-mobile-info-switch a';
   $(savemaSwitch).on('click', function(e) {
     e.preventDefault();
@@ -29,10 +30,22 @@ $( document ).ready(function() {
 
   $(window).scroll(function() {
       var mobileInfo = '.savema-mobile-info';
-      var scrollClass = 'savema-scrolled';
+      var scrollClass = 'savema-scrolled uk-animation-slide-bottom';
+      var backToTop = $('.savema-totop a');
+
+      window.clearTimeout(isScrolling);
+
       $(mobileInfo).toggleClass(scrollClass,
         $(document).scrollTop() >= 250
       );
+
+      if ($(document).scrollTop() >= 600) {
+        isScrolling = setTimeout(() => {
+          backToTop.addClass('uk-animation-fade');
+        }, 750);
+      } else {
+        backToTop.removeClass('uk-animation-fade');
+      }
   });
 });
 
