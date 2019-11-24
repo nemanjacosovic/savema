@@ -110,6 +110,9 @@ $color-grey-blue: #8D99AE;
 $svm-padding-footer-top: 60px;
 $svm-padding-footer-lr: 30px;
 
+$svm-red-tilt: 44px;
+$svm-red-tilt-top: 22px;
+
 a {
   color: $color-main;
 }
@@ -315,21 +318,21 @@ html, body {
 
       &:before {
         position: absolute;
-        top: -18px;
+        top: -$svm-red-tilt-top;
         left: -10px;
         right: -10px;
         content: "";
-        height: 34px;
+        height: $svm-red-tilt;
         transform: rotate(5deg);
         background: $color-heidelberg-red;
       }
       &:after {
         position: absolute;
-        bottom: -18px;
+        bottom: -$svm-red-tilt-top;
         left: -10px;
         right: -10px;
         content: "";
-        height: 34px;
+        height: $svm-red-tilt;
         transform: rotate(5deg);
         background: $color-heidelberg-red;
       }
@@ -377,21 +380,21 @@ html, body {
 
       &:before {
         position: absolute;
-        top: -18px;
+        top: -$svm-red-tilt-top;
         left: -10px;
         right: -10px;
         content: "";
-        height: 34px;
+        height: $svm-red-tilt;
         transform: rotate(5deg);
         background: $color-heidelberg-red;
       }
       &:after {
         position: absolute;
-        bottom: -18px;
+        bottom: -$svm-red-tilt-top;
         left: -10px;
         right: -10px;
         content: "";
-        height: 34px;
+        height: $svm-red-tilt;
         transform: rotate(5deg);
         background: $color-heidelberg-red;
       }
@@ -516,6 +519,140 @@ html, body {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (min-width: 481px) {
+  .savema-mobile-info {
+    display: none;
+    visibility: hidden;
+  }
+
+  .savema {
+    width: 960px;
+    margin: 0 auto;
+
+    &-header {
+      padding: 0;
+      border-bottom: 1px solid $color-main;
+
+      img {
+        width: auto;
+        height: 64px;
+      }
+
+      &-mobile-openclose button {
+        width: auto !important;
+      }
+    }
+
+    &-content {
+      &-masthead {
+        margin-top: 15px;
+        padding: 120px 30px 45px 45px;
+        background: url(../img/mastbg/bg1-dlouhe-strane-861x574.jpg);
+        background: url(../img/mastbg/bg2-nuclear-power-plant-861x574.jpg);
+        background: url(../img/mastbg/bg3-pexels-photo-2026334.jpeg);
+        background: url(../img/mastbg/bg4-PIA21983.jpg);
+        background-size: cover;
+
+        &-title {
+          margin: 0;
+          padding: 10px 0;
+          display: inline;
+          line-height: 2.2em;
+          box-shadow: 10px 0 0 rgba($color: white, $alpha: 0.2), -10px 0 0 rgba($color: white, $alpha: 0.2);
+          background: rgba($color-afw, 0.2);
+          text-shadow: 1px 1px 0 rgba($color: white, $alpha: 0.9);
+        }
+
+        a {
+          margin: 30px 0 0 -10px;
+        }
+
+        p {
+          width: 70%;
+          padding: 15px;
+          color: white;
+          font-weight: 300;
+          font-weight: 700;
+          margin: 30px 0 0 -20px;
+          text-shadow: 1px 1px 0 rgba($color: black, $alpha: 0.9);
+          // background: rgba($color-afw, 0.4);
+        }
+      }
+
+      &-block {
+        padding: 60px 0;
+        position: relative;
+
+        img {
+          left: 0;
+          width: auto;
+          height: 48px;
+          position: absolute;
+        }
+
+        h2 {
+          margin: 0;
+          padding: 0 0 0 64px;
+          line-height: 48px;
+          display: inline-block;
+        }
+
+        & .savema-footer-weare {
+          img {
+            transform: translate(-30%, -50%);
+          }
+        }
+      }
+    }
+
+    &-footer {
+      &-logo {
+        img {
+          margin: 0 auto;
+          width: auto;
+          height: 64px;
+        }
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+      &-logonmoto {
+        img {
+          margin: 0 auto;
+          width: auto;
+          height: 64px;
+        }
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+      &-companyinfo {
+        width: 100%;
+        box-sizing: border-box;
+
+        & div {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+
+          p {
+            margin: 0;
+            justify-content: space-evenly;
+          }
+        }
+      }
+      &-copylabel {
+        font-size: 0.9em;
+        background: $color-grey-blue;
+        padding: $svm-padding-footer-lr;
+      }
+    }
+  }
 }
 
 @media print,
