@@ -94,7 +94,7 @@ a {
 
 html, body {
   color: #2B2D42;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .savema-mobile-info {
@@ -105,14 +105,12 @@ html, body {
   background: #ededf4;
   border-bottom: 1px solid #ebebcb;
 }
-
 .savema-mobile-info a {
   color: #e8232a;
   line-height: 1em;
   font-weight: 400;
   vertical-align: middle;
 }
-
 .savema-mobile-info a span {
   padding: 6px;
   color: #e8232a;
@@ -120,12 +118,10 @@ html, body {
   border-radius: 50%;
   border: 1px solid #e8232a;
 }
-
 .savema-mobile-info a span.showtime {
   color: #ffffff;
   background: #e8232a;
 }
-
 .savema-mobile-info-title {
   bottom: 0;
   margin: 0;
@@ -139,16 +135,13 @@ html, body {
   padding: 0 0 2px 0;
   border-radius: 1px 1px 10px 10px;
   background: #ededf4;
-  -webkit-transform: translateX(calc(15% + 15px)) translateY(50%);
-          transform: translateX(calc(15% + 15px)) translateY(50%);
-  -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
+  transform: translateX(calc(15% + 15px)) translateY(50%);
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
   border-top: none;
   border-right: none;
   border-bottom: 1px solid #dbdbbb;
   border-left: none;
 }
-
 .savema-mobile-info.savema-scrolled {
   top: auto;
   bottom: 0;
@@ -157,7 +150,6 @@ html, body {
   border-top: 1px solid #ebebcb;
   border-bottom: none;
 }
-
 .savema-mobile-info.savema-scrolled .savema-mobile-info-title {
   top: -20px;
   bottom: auto;
@@ -166,10 +158,8 @@ html, body {
   border-right: none;
   border-bottom: none;
   border-left: none;
-  -webkit-box-shadow: 0 -3px 2px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 -3px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -3px 2px 0 rgba(0, 0, 0, 0.05);
 }
-
 .savema-totop a {
   top: 5%;
   opacity: 0;
@@ -184,21 +174,16 @@ html, body {
   background: rgba(237, 237, 244, 0.9);
   border-bottom: 1px solid lightgray;
 }
-
 .savema-header {
   padding: 79px 15px 0 15px;
 }
-
 .savema-header.savema-scrolled {
   padding-top: 69px;
-  -webkit-transform: translateX(calc(25% + 15px)) translateY(-50%);
-          transform: translateX(calc(25% + 15px)) translateY(-50%);
+  transform: translateX(calc(25% + 15px)) translateY(-50%);
 }
-
 .savema-header-mobile.uk-grid {
   margin-top: 10px;
 }
-
 .savema-header-mobile-openclose button {
   width: 100%;
   border: none;
@@ -207,78 +192,68 @@ html, body {
   font-size: 1.37em;
   border-radius: 34px;
 }
-
 .savema-header-mobile-openclose button span {
   vertical-align: 1px;
 }
-
 .savema-header-mobile-menu li {
   padding: 7px 0;
 }
-
 .savema-content-masthead {
   padding: 0 30px;
   background: url("../img/savema-header-bg-3.png") center center no-repeat;
   background-size: auto 100%;
 }
-
 .savema-content-masthead-title {
   font-size: 2em;
   font-weight: 800;
 }
-
 .savema-content-masthead-title-alt {
   color: #e8232a;
 }
-
 .savema-content-masthead p {
   line-height: 1.5em;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-
 .savema-content-block {
   padding: 60px 30px 0 30px;
 }
-
 .savema-content-block h2 {
   font-weight: 700;
 }
-
 .savema-content-block-image {
   margin-bottom: 0;
 }
-
 .savema-content-block li {
   padding-bottom: 15px;
 }
-
 .savema-content-block-cta {
   padding: 0 25px 0 30px;
   letter-spacing: 0.05em;
 }
-
 .savema-content-block-cta span.btnlnk-icon {
   margin-left: 10px;
 }
-
+.savema-content-block-weare {
+  display: block !important;
+}
+.savema-content-block-weare > div:last-child {
+  margin: 50px 0 0 0 !important;
+}
+.savema-content-block-weare h4 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .savema-footer {
   overflow: hidden;
   color: #ededf4;
   padding: 60px 0 0 0;
 }
-
 .savema-footer h4 {
   font-weight: 700;
   color: #ededf4;
   text-transform: uppercase;
 }
-
-.savema-footer-weare h4 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .savema-footer-logo {
   position: relative;
   padding-top: 60px;
@@ -287,7 +262,6 @@ html, body {
   padding-right: 30px;
   background: #a20021;
 }
-
 .savema-footer-logo:before {
   position: absolute;
   top: -22px;
@@ -295,11 +269,9 @@ html, body {
   right: -10px;
   content: "";
   height: 44px;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  transform: rotate(5deg);
   background: #a20021;
 }
-
 .savema-footer-logo:after {
   position: absolute;
   bottom: -22px;
@@ -307,15 +279,12 @@ html, body {
   right: -10px;
   content: "";
   height: 44px;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  transform: rotate(5deg);
   background: #a20021;
 }
-
 .savema-footer-map {
   padding-top: 60px;
 }
-
 .savema-footer-contactus {
   background: #8D99AE;
   padding-top: 60px;
@@ -323,31 +292,25 @@ html, body {
   padding-bottom: 120px;
   padding-right: 30px;
 }
-
 .savema-footer-contactus legend {
   font-weight: 300;
   font-size: 1em;
 }
-
 .savema-footer-contactus-checkgroup {
   padding-bottom: 5px;
 }
-
 .savema-footer-contactus-checkgroup label {
   display: block;
   margin-bottom: 10px;
 }
-
 .savema-footer-contactus-reset, .savema-footer-contactus-send {
   width: 100%;
   background: white;
 }
-
 .savema-footer-contactus-send {
   font-weight: 800;
   background: #a20021;
 }
-
 .savema-footer-logonmoto {
   position: relative;
   padding-top: 60px;
@@ -356,7 +319,6 @@ html, body {
   padding-right: 30px;
   background: #a20021;
 }
-
 .savema-footer-logonmoto:before {
   position: absolute;
   top: -22px;
@@ -364,11 +326,9 @@ html, body {
   right: -10px;
   content: "";
   height: 44px;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  transform: rotate(5deg);
   background: #a20021;
 }
-
 .savema-footer-logonmoto:after {
   position: absolute;
   bottom: -22px;
@@ -376,11 +336,9 @@ html, body {
   right: -10px;
   content: "";
   height: 44px;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  transform: rotate(5deg);
   background: #a20021;
 }
-
 .savema-footer-companyinfo {
   overflow: auto;
   background: #8D99AE;
@@ -389,22 +347,21 @@ html, body {
   padding-right: 30px;
   font-size: 1.1em;
 }
-
+.savema-footer-companyinfo a {
+  color: white;
+}
 .savema-footer-quicklinks {
   padding-top: 60px;
 }
-
 .savema-footer-somedlnks {
   background: #8D99AE;
   padding-top: 60px;
   padding-left: 30px;
   padding-right: 30px;
 }
-
 .savema-footer-somedlnks a {
   color: white;
 }
-
 .savema-footer-copylabel {
   font-size: 0.9em;
   background: #8D99AE;
@@ -496,14 +453,14 @@ html, body {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-
 @media only screen and (min-width: 481px) {
   .savema-mobile-info {
     display: none;
     visibility: hidden;
   }
+
   .savema {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
   }
   .savema-header {
@@ -531,8 +488,7 @@ html, body {
     padding: 10px 0;
     display: inline;
     line-height: 2.2em;
-    -webkit-box-shadow: 10px 0 0 rgba(255, 255, 255, 0.2), -10px 0 0 rgba(255, 255, 255, 0.2);
-            box-shadow: 10px 0 0 rgba(255, 255, 255, 0.2), -10px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 0 0 rgba(255, 255, 255, 0.2), -10px 0 0 rgba(255, 255, 255, 0.2);
     background: rgba(237, 237, 244, 0.2);
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.9);
   }
@@ -564,9 +520,11 @@ html, body {
     line-height: 48px;
     display: inline-block;
   }
-  .savema-content-block .savema-footer-weare img {
-    -webkit-transform: translate(-30%, -50%);
-            transform: translate(-30%, -50%);
+  .savema-content-block-weare {
+    display: flex;
+  }
+  .savema-content-block-weare img {
+    transform: translate(0, -50%);
   }
   .savema-footer-logo img {
     margin: 0 auto;
@@ -586,28 +544,17 @@ html, body {
   }
   .savema-footer-companyinfo {
     width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .savema-footer-companyinfo div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .savema-footer-companyinfo div p {
     margin: 0;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .savema-footer-copylabel {
     font-size: 0.9em;
@@ -615,11 +562,15 @@ html, body {
     padding: 30px;
   }
 }
-
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .savema-content-block {
+    padding: 0 30px;
+    margin: 60px;
+  }
+}
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -627,8 +578,8 @@ html, body {
    ========================================================================== */
 @media print {
   *,
-  *:before,
-  *:after {
+*:before,
+*:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
@@ -636,32 +587,39 @@ html, body {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
-  a:visited {
+a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
   a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
-  blockquote {
+blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -669,19 +627,23 @@ html, body {
   thead {
     display: table-header-group;
   }
+
   tr,
-  img {
+img {
     page-break-inside: avoid;
   }
+
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
-  h3 {
+h3 {
     page-break-after: avoid;
   }
 }
+
 /*# sourceMappingURL=main.css.map */

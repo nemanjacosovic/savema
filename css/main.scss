@@ -289,6 +289,19 @@ html, body {
           margin-left: 10px;
         }
       }
+
+      &-weare {
+        display: block !important;
+
+        & > div:last-child {
+          margin: 50px 0 0 0 !important;
+        }
+
+        h4 {
+          padding-left: $svm-padding-footer-lr;
+          padding-right: $svm-padding-footer-lr;
+        }
+      }
     }
   }
   &-footer {
@@ -302,12 +315,6 @@ html, body {
       text-transform: uppercase;
     }
 
-    &-weare {
-      h4 {
-        padding-left: $svm-padding-footer-lr;
-        padding-right: $svm-padding-footer-lr;
-      }
-    }
     &-logo {
       position: relative;
       padding-top: $svm-padding-footer-top;
@@ -406,6 +413,9 @@ html, body {
       padding-left: $svm-padding-footer-lr;
       padding-right: $svm-padding-footer-lr;
       font-size: 1.1em;
+      & a {
+        color: white;
+      }
     }
     &-quicklinks {
       padding-top: $svm-padding-footer-top;
@@ -528,7 +538,7 @@ html, body {
   }
 
   .savema {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 
     &-header {
@@ -599,9 +609,11 @@ html, body {
           display: inline-block;
         }
 
-        & .savema-footer-weare {
+        &-weare {
+          display: flex;
+
           img {
-            transform: translate(-30%, -50%);
+            transform: translate(0, -50%);
           }
         }
       }
@@ -652,6 +664,13 @@ html, body {
         padding: $svm-padding-footer-lr;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+  .savema-content-block {
+    padding: 0 30px;
+    margin: 60px;
   }
 }
 
