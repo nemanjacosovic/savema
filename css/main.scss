@@ -211,6 +211,30 @@ html, body {
     }
   }
 
+  &-desktopinfo {
+    padding: 3px 5px;
+    background: $color-afw;
+    border-bottom: 1px solid lightgray;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      
+
+      li {
+        font-size: 12px;
+        padding: 3px 12px;
+        font-weight: 400;
+        display: inline-block;
+      }
+
+      li:first-child {
+        flex: 1 0 0;
+      }
+    }
+  }
   &-header {
     padding: 79px 15px 0 15px;
 
@@ -244,7 +268,7 @@ html, body {
       }
     }
 
-    &-desktop {}
+    // &-desktop {}
   }
   &-content {
     &-masthead {
@@ -291,12 +315,6 @@ html, body {
       }
 
       &-weare {
-        display: block !important;
-
-        & > div:last-child {
-          margin: 50px 0 0 0 !important;
-        }
-
         h4 {
           padding-left: $svm-padding-footer-lr;
           padding-right: $svm-padding-footer-lr;
@@ -671,6 +689,17 @@ html, body {
   .savema-content-block {
     padding: 0 30px;
     margin: 60px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .savema-content-block-weare {
+    display: block;
+
+    & > div:last-child {
+      margin: 50px 0 0 0;
+      margin-left: 0 !important;
+    }
   }
 }
 
