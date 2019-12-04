@@ -34,12 +34,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- Google Fonts 'Open Sans' -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="js/lazysizes.min.js" async=""></script>
 
-    <!-- UIkit JS -->
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+    <!-- Google Fonts 'Open Sans' -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="savema" id="sahometop">
@@ -82,7 +80,12 @@
         <div class="uk-grid uk-padding-small savema-header-mobile">
           <!-- Logo -->
           <div class="uk-width-3-5">
-            <img data-src="img/savema-cacak-logo.png" width="100%" height="" alt="Savema logo" uk-img>
+            <!--[if lte IE 8]>
+            <img src="/img/original-savema-cacak-logo-vector-opt.png" title="Savema logo" alt="SAVEMA INOVACIJE" width="100%" />
+            <![endif]-->
+            <!--[if !IE]> -->
+            <object data="img/original-savema-cacak-logo-main.svg" type="image/svg+xml" alt="Savema logo" class="savema-vector" uk-img></object>
+            <!-- <![endif]-->
           </div>
           <!-- Menu Open/Close -->
           <div class="uk-width-2-5 uk-text-right uk-margin-auto-vertical savema-header-mobile-openclose">
@@ -135,7 +138,7 @@
         </div>
         <!-- Block A -->
         <div class="savema-content-block" id="dobrodosli">
-          <img class="uk-align-center savema-content-block-image" data-src="img/savema-welcome-icon.png" width="50%" height="" alt="Savema" uk-img>
+          <img class="uk-align-center savema-content-block-image" data-src="./img/icons/savema-wlcome-icon-render.png" width="50%" height="" alt="Savema" uk-img>
           <h2>Dobrodošli</h2>
           <p>SAVEMA INOVACIJE Čačak je agencija koja pruža usluge Savetnika za hemikalije i Savetnika za bezbednost u transportu opasne robe u drumskom i železničkom saobraćaju ADR/RID. Takođe, nudimo konsultantske usluge za razvoj inovativnih proizvoda i usluga u različitim oblastima hemijske, farmaceutske i prehrambene industrije.</p>
           <a class="uk-button uk-button-secondary savema-content-block-cta" href="#savemakontakt">Kontakt <span class="uk-inline btnlnk-icon" uk-icon="icon: arrow-right; ratio: 1"></span></a>
@@ -236,8 +239,17 @@
           <div class="savema-content-block-weare uk-flex uk-flex-top">
             <div class="uk-card uk-card-default uk-grid-collapse uk-width-1-2@m" uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="img/sanja_popadic-savema.jpg" alt="" uk-cover>
-                <canvas width="600" height="400"></canvas>
+                <img
+                  alt="Sanja Popadić"
+                  title="Sanja Popadić fotografija"
+                  src="img/sanja_popadic-savema-a-j40-b25.jpg"
+                  data-sizes="auto"
+                  data-src="image2.jpg"
+                  data-srcset="img/sanja_popadic-savema-b-j30.jpg 1x, img/sanja_popadic-savema-c-j80.jpg 2x"
+                  class="lazyload"
+                  uk-cover
+                />
+                <canvas width="660" height="440"></canvas>
               </div>
               <div>
                 <div class="uk-card-body">
@@ -249,17 +261,26 @@
                     <li>Licenca Savetnika za hemikalije 2012- Hemijski fakultet, Beograd, obnovljena licenca 2018. godine</li>
                     <li>Sertifikat Savetnika za bezbednost u transportu opasne robe ADR/RID, Uprava za transport opasnog tereta, Beograd 2015. godine</li>
                   </ul>
-                  <p>Kontakt:<br>
-                    Telefon: <a href="tel:+38163683792" title="kontakt telefon" class="uk-visible"><strong>(+381) 063 683 792</strong></a><br>
-                    E-mail: <a href="mailto:savemainovacije@gmail.com" title="kontakt email"><strong>savemainovacije@gmail.com</strong></a>
+                  <p>Kontakt telefon i e-mail:<br>
+                    t: <a href="tel:+38163683792" title="kontakt telefon" class="uk-visible"><strong>(+381) 063 683 792</strong></a><br>
+                    m: <a href="mailto:savemainovacije@gmail.com" title="kontakt email"><strong>savemainovacije@gmail.com</strong></a>
                   </p>
                 </div>
               </div>
             </div>
             <div class="uk-card uk-card-default uk-grid-collapse uk-width-1-2@m uk-margin-large-left" uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="img/sretko_popadic-savema.jpg" alt="" uk-cover>
-                <canvas width="600" height="400"></canvas>
+                <img
+                  alt="Sretko Popadić"
+                  title="Sretko Popadić fotografija"
+                  src="img/sretko_popadic-savema-a-j40-b25.jpg"
+                  data-sizes="auto"
+                  data-src="image2.jpg"
+                  data-srcset="img/sretko_popadic-savema-b-j30.jpg 1x, img/sretko_popadic-savema-c-j80.jpg 2x"
+                  class="lazyload"
+                  uk-cover
+                />
+                <canvas width="660" height="440"></canvas>
               </div>
               <div>
                 <div class="uk-card-body">
@@ -272,9 +293,9 @@
                     <li>Pobednik međunarodnog takmičenja <a href="https://www.foundcenter.com/catch" title="Catch - Foundcenter Investment">Catch foundcenter investment</a>, Beograd 2016. godine</li>
                     <li>Pobednik takmičenja <a href="https://deltabiznisinkubator.rs/izabran-pobednik-delta-biznis-inkubatora/" title="DELTA BIZNIS INKUBATOR | Izabran pobednik Delta Biznis Inkubatora">Delta biznis inkubator, Beograd 2018. godine</a></li>
                   </ul>
-                  <p>Kontakt:<br>
-                    Telefon: <a href="tel:+38163683792" title="kontakt telefon" class="uk-visible"><strong>(+381) 063 683 792</strong></a><br>
-                    E-mail: <a href="mailto:savemainovacije@gmail.com" title="kontakt email"><strong>savemainovacije@gmail.com</strong></a>
+                  <p>Kontakt telefon i e-mail:<br>
+                    t: <a href="tel:+38163683792" title="kontakt telefon" class="uk-visible"><strong>(+381) 063 683 792</strong></a><br>
+                    m: <a href="mailto:savemainovacije@gmail.com" title="kontakt email"><strong>savemainovacije@gmail.com</strong></a>
                   </p>
                 </div>
               </div>
@@ -299,7 +320,12 @@
         <!-- Logo and motto -->
         <div class="savema-footer-logo">
             <div class="uk-grid uk-flex uk-flex-middle">
-                <img data-src="img/savema-cacak-logo-white.png" width="100%" height="" alt="Savema logo" uk-img>
+              <!--[if lte IE 8]>
+              <img src="/img/original-savema-cacak-logo-vector-opt.png" title="Savema logo" alt="SAVEMA INOVACIJE" width="100%" />
+              <![endif]-->
+              <!--[if !IE]> -->
+              <object data="img/original-savema-cacak-logo-alt.svg" type="image/svg+xml" alt="Savema logo" class="savema-vector" uk-img></object>
+              <!-- <![endif]-->
             </div>
           </div>
         <!-- Kontakt forma -->
@@ -374,17 +400,13 @@
       <!-- Call Us shortcut -->
       <div class="savema-info-bottom" id="savema-hover"></div>
     </div>
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-    </script>
-    <!--<script src="https://www.google-analytics.com/analytics.js" async></script>-->
   </body>
 </html>

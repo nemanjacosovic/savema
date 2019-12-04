@@ -118,6 +118,7 @@ a {
 }
 
 html, body {
+  font-weight: 400;
   color: $color-gunmetal;
   font-family: 'Open Sans', sans-serif !important;
 }
@@ -134,7 +135,6 @@ html, body {
     & a {
       color: $main-red;
       line-height: 1em;
-      font-weight: 400;
       vertical-align: middle;
 
       & span {
@@ -203,7 +203,7 @@ html, body {
       position: fixed;
       font-size: 0.8em;
       line-height: 1em;
-      font-weight: 700;
+      font-weight: 800;
       border-radius: 3px;
       padding: 5px 10px 5px 0;
       background: rgba($color-afw,0.9);
@@ -226,7 +226,6 @@ html, body {
       li {
         font-size: 12px;
         padding: 3px 12px;
-        font-weight: 400;
         display: inline-block;
       }
 
@@ -252,7 +251,6 @@ html, body {
           width: 100%;
           border: none;
           padding: 5px 0;
-          font-weight: 300;
           font-size: 1.37em;
           border-radius: 34px;
 
@@ -261,7 +259,12 @@ html, body {
           }
         }
       }
+
+      .savema-vector {
+        width: 100%;
+      }
     }
+
     &-mobile-menu {
       li {
         padding: 7px 0;
@@ -294,7 +297,7 @@ html, body {
       padding: 60px 30px 0 30px;
 
       & h2 {
-        font-weight: 700;
+        font-weight: 800;
       }
 
       &-image {
@@ -328,7 +331,7 @@ html, body {
     padding: 60px 0 0 0;
 
     h4 {
-      font-weight: 700;
+      font-weight: 800;
       color: $color-afw;
       text-transform: uppercase;
     }
@@ -373,7 +376,6 @@ html, body {
       padding-right: $svm-padding-footer-lr;
 
       legend {
-        font-weight: 300;
         font-size: 1em;
       }
       &-checkgroup {
@@ -601,8 +603,7 @@ html, body {
           width: 70%;
           padding: 15px;
           color: white;
-          font-weight: 300;
-          font-weight: 700;
+          font-weight: 800;
           margin: 30px 0 0 -20px;
           text-shadow: 1px 1px 0 rgba($color: black, $alpha: 0.9);
           // background: rgba($color-afw, 0.4);
