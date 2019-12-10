@@ -240,8 +240,6 @@ html, body {
 
 .savema-content-masthead {
   padding: 0 30px;
-  background: url("../img/savema-header-bg-3.png") center center no-repeat;
-  background-size: auto 100%;
 }
 
 .savema-content-masthead-title {
@@ -541,10 +539,7 @@ html, body {
   .savema-content-masthead {
     margin-top: 15px;
     padding: 120px 30px 45px 45px;
-    background: url(../img/mastbg/bg1-dlouhe-strane-861x574.jpg);
-    background: url(../img/mastbg/bg2-nuclear-power-plant-861x574.jpg);
-    background: url(../img/mastbg/bg3-pexels-photo-2026334.jpeg);
-    background: url(../img/mastbg/bg4-PIA21983.jpg);
+    background: url(../img/mastbg/bg.jpg);
     background-size: cover;
   }
   .savema-content-masthead-title {
